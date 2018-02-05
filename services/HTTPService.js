@@ -40,7 +40,7 @@ class HTTPService {
                 //错误  通用错误码
                 errorObject.statusCode = 1;
                 errorObject.noticeMessage = responseJSON.msg;
-
+                console.log('ranranranran')
                 break;
 
             case -1:
@@ -182,8 +182,9 @@ class HTTPService {
           url,
           filePath: payload.filePath,
           name:"file",
+          data:{},
           header: {
-            'content-type': 'multipart/form-data'  ,
+            'content-type': 'multipart/form-data',
             ...HTTPService.requestHeader(payload, method),
             ...extend_headers
           },
@@ -201,7 +202,7 @@ class HTTPService {
             if (statusCode === 200) {
               //API业务层逻辑处理
               const { data, code, msg } = responseJSON.data;
-              console.log('成功')
+              console.log('录音成功')
               console.log(responseJSON)
               if (code === 1) {
                 resolve(responseJSON.data);
@@ -211,6 +212,7 @@ class HTTPService {
             } else {
               //HTTP通讯层异常
               console.log('通讯层异常成功')
+              console.log('录音失败')
               reject(HTTPService.exception_process(responseJSON));
             }
           },

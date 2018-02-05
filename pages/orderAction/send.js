@@ -125,7 +125,16 @@ stopRecode: function () {
         setTimeout(function () {
           wx.hideLoading()
         }, 2000)
-      })
+        })
+        .catch(e => {
+          wx.showToast({
+            title: e.noticeMessage || '加载失败',
+            image: "/image/warn.png"
+          });
+          setTimeout(function () {
+            wx.hideLoading()
+          }, 2000)
+        });
       console.info(that.data.wish_audio);
     })
   },

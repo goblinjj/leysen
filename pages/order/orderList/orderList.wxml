@@ -12,7 +12,7 @@
       <view class='order-item' wx:for="{{orderList}}" wx:key="id">
         <view class='order-detail flex'>
           <view class='left-info'>
-            <image mode='aspectFit' src='{{item.gift_url}}'></image>
+            <image mode='aspectFit' src='{{item.category_pic}}'></image>
           </view>
           <view class='right-info'>
             <view class='tit flex j-s'>
@@ -25,10 +25,6 @@
           </view>
         </view>
         <view class='order-btn flex j-e a-c'>
-         <block wx:if="{{item.refund_time}}">
-           <button class='btn-default order-btn-status'>已退款</button>
-         </block>
-          <block wx:else>
             <block wx:if="{{item.status == 1}}">
             <!-- 未付款 -->
             <button class='btn-default order-btn-status' data-index='{{index}}' catchtap='goOrder'>付款</button>
@@ -36,7 +32,7 @@
           <block wx:if="{{item.status == 2}}">
             <!-- 已付款 -->
             <button wx:if="{{item.price>0}}" catchtap='backPay' data-num='{{item.order_number}}' class='btn-default order-btn-status'>退款</button>
-            <button wx:if="{{item.price>0}}" class='btn-default order-btn-status' data-name="{{item.category_name}}" data-pic="{{item.gift_url}}" data-num='{{item.order_number}}' catchtap='sendOther'>赠送</button>
+            <button wx:if="{{item.price>0}}" class='btn-default order-btn-status' data-name="{{item.category_name}}" data-pic="{{item.category_pic}}" data-num='{{item.order_number}}' catchtap='sendOther'>赠送</button>
             <button catchtap='toUse' data-num='{{item.order_number}}' class='btn-default order-btn-status'>使用</button>
           </block>
           <block wx:if="{{item.status == 3}}">
@@ -55,9 +51,6 @@
             <!-- 转赠中 -->
             <button class='btn-default order-btn-status'>转赠中</button>
           </block>
-         </block>
-          
-          <!-- <button catchtap='toUse' data-num='{{item.order_number}}' class='btn-default order-btn-status'>使用</button> -->
         </view>
       </view>
       <!-- for   end -->
