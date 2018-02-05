@@ -22,11 +22,11 @@ Page({
     })
 
   },
-  testtap:function(){
-    wx.navigateTo({
-      url: '/pages/order/sendUrl/sendUrl?order_number=2018020523783'
-    })
-  },
+  // testtap:function(){
+  //   wx.navigateTo({
+  //     url: '/pages/order/sendUrl/sendUrl?order_number=2018020523783'
+  //   })
+  // },
   //事件处理函数
   getList: function () {
     var that = this

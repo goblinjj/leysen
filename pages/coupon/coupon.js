@@ -3,6 +3,10 @@ import { PayService as Pay } from "../../services/PayService";
 const CARDLIST = getApp().globalData.API.CARD.CARDLIST;
 const SETORDER = getApp().globalData.API.CARD.SETORDER;
 var Zan = require("../../dist/index");
+
+var strip_tags = require('../../utils/striptags.js');
+const WxParse = require("../../utils/wxParse.js");
+
 Page(
 
   Object.assign({}, Zan.Quantity,{
@@ -11,10 +15,28 @@ Page(
     choosed: 0, //选中的卡片index
     cid: '',
     cardList: [],
-    showCard:false
+    showCard:false,
+    curitem:{},
+    showItem:false
 
   },
-
+  hidenDtl:function(){
+    this.setData({ showItem: false, curitem: {}});
+  },
+  // 文本
+  changeHtml: function (compare) {
+    var html_nodes = this.data.cardList[compare].desc;
+    html_nodes = html_nodes.replace(/\\/ig, '');
+    html_nodes = strip_tags(html_nodes, ['img']);//仅允许html img标签
+    console.log(html_nodes);
+    WxParse.wxParse("html_nodes", "html", html_nodes, this, 0);
+  },
+  phoneCall: function (e) {
+    var phone = e.currentTarget.id;
+    wx.makePhoneCall({
+      phoneNumber: phone
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -73,6 +95,11 @@ Page(
         }, 2000)
       });
   },
+  choosedActionShow: function (e) {
+    let thisindex = e.currentTarget.dataset.index //当前点击的index
+    this.setData({ choosed: thisindex, curitem: this.data.cardList[thisindex], showItem: true });
+    this.changeHtml(thisindex);
+  },
   // 选择卡片
   choosedAction: function(e){
     let choosed = this.data.choosed
@@ -80,7 +107,6 @@ Page(
     if (choosed === thisindex){
       // 点击是当前卡片
       console.log('点击是当前卡片')
-   
     }else{
       // 点击是其它卡片
       console.log('点击是其它卡片')

@@ -34,6 +34,12 @@ Page(
         num: quantity
       })   
     },
+    phoneCall:function(e){
+      var phone = e.currentTarget.id;
+      wx.makePhoneCall({
+        phoneNumber: phone
+      })
+    },
     // 文本
     changeHtml: function(compare){
       var html_nodes = this.data.cardList[compare].desc;

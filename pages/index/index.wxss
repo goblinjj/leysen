@@ -20,6 +20,16 @@
   margin-bottom: 10rpx;
   padding: 0 20rpx;
   font-size: 34rpx;
+  text-align: center;
+  color: #1d2088;
+}
+.tit2{
+  line-height: 35rpx;
+  margin-bottom: 10rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: #1d2088;
 }
 .fast-list{
   flex-wrap:wrap;
@@ -35,6 +45,8 @@
 .fast-list .fast-item .fast-tit{
   line-height: 60rpx;
   padding: 0 20rpx;
+  text-align: center;
+  color: #555555;
 }
 .fast-list .fast-item .fast-img{
   width: 340rpx;

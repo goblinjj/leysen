@@ -9,7 +9,7 @@
   padding: 0rpx 40rpx 20rpx;
 }
 .coupon-list .coupon-item .coupon-card{
-  border-bottom: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #cdad68;
   padding: 20rpx;
   position: relative;
   text-align: center;
@@ -21,8 +21,8 @@
   border-color: #ffb400
 }
 .coupon-list .coupon-item .coupon-card image{
-  width: 590rpx;
-  height: 330rpx;
+  width: 346rpx;
+  height: 287rpx;
   display: block;
   border: 4rpx solid transparent;
   border-radius: 10rpx;
@@ -33,7 +33,7 @@
   position: absolute;
   right: -15rpx;
   top: -15rpx;
-  background: #ffb400;
+  background: #0fbe13;
   color: #fff;
   width: 46rpx;
   height: 46rpx;
@@ -50,6 +50,7 @@
 }
 .coupon-tit .name{
   max-width: 460rpx;
+  color: #666666;
 }
 .buy-foot{
   position: fixed;
@@ -60,7 +61,7 @@
   height: 110rpx;
   width: 100%;
   padding: 0 40rpx;
-  z-index: 5;
+  z-index: 99;
 }
 .buy-foot .left-buy-foot .num{
   color: #999;
@@ -78,7 +79,81 @@
   text-align: center;
   font-size: 32rpx;
   border-radius: 6rpx;
-  background: #2a41a8;
+  background: #0fbe13;
   display: block;
   border: 0;
+}
+.item-info_bg{
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 98;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.item-info{
+  position: fixed;
+  bottom: 110rpx;
+  background-color: #fff;
+  height: 60%;
+  z-index: 99;
+  padding-top: 30rpx;
+}
+.close-img{
+  position: absolute;
+  height: 30rpx;
+  width: 30rpx;
+  right: 30rpx;
+  top: 20rpx;
+}
+.choose-ul{
+  background: #fff;
+  padding: 30rpx 20rpx 40rpx;
+  font-size: 25rpx;
+}
+.choose-item{
+  line-height: 40rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #e5e5e5;
+  color: #666;
+  font-size: 25rpx;
+}
+.choose-item.no-border{
+  border-bottom: 0;
+}
+.choose-item .label{
+  width: 170rpx;
+  flex-shrink: 0;
+  overflow: hidden
+}
+.choose-item .right-choose{
+  color: #999;
+  line-height: 40rpx;
+}
+.in-right-choose{
+  padding-right: 20rpx;
+  width: 555rpx;
+}
+.notice_info_conten{
+  height: 180rpx;
+  font-size: 22rpx;
+  line-height: 28rpx;
+}
+.notice_info_conten .title1{
+  font-size: 25rpx;
+  font-weight: bold;
+  line-height: 28rpx;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+}
+.notice_info_conten .textp{
+
+  display: inline-block;
+}
+.choose-item .right-choose.color_defalut{
+  color: #7375cb;
 }

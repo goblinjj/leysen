@@ -76,7 +76,7 @@
   position: absolute;
   right: -15rpx;
   top: -15rpx;
-  background: #2a41a8;
+  background: #0fbe13;
   color: #fff;
   width: 46rpx;
   height: 46rpx;
@@ -118,7 +118,7 @@
   margin: 0 auto;
 }
 .coupon-list .coupon-item .coupon-card.active image{
-  border-color: #2a41a8;
+  border-color: #cdad68;
 }
 .coupon-list .coupon-item .right-gift{
   padding-left: 40rpx;
@@ -150,7 +150,7 @@
   text-align: center;
   font-size: 32rpx;
   border-radius: 6rpx;
-  background: #2a41a8;
+  background: #0fbe13;
   display: block;
   border: 0;
 }
@@ -187,6 +187,7 @@
   flex-shrink: 0;
   overflow: hidden
 }
+
 .choose-item .right-choose{
   color: #999;
   line-height: 40rpx;
@@ -198,4 +199,22 @@
 .gift-content{
   width: 750rpx;
   overflow: hidden;
+}
+.notice_info_conten{
+  height: 320rpx;
+  font-size: 22rpx;
+  line-height: 28rpx;
+}
+.notice_info_conten .title1{
+  font-size: 26rpx;
+  font-weight: bold;
+  line-height: 32rpx;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+}
+.notice_info_conten .textp{
+
+  display: inline-block;
 }

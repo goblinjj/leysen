@@ -106,18 +106,18 @@ stopRecode: function () {
       console.log(res)
       console.log('停止录音', res.tempFilePath);
       var file = res.tempFilePath;
-      wx.showLoading({
-        title: '保存中',
-      });
+      // wx.showLoading({
+      //   title: '保存中',
+      // });
       HTTP.UPLOADFILE({
         ...UPAUDIO,
         payload: {
           filePath: file,
         }
       }).then((e) => {
-        wx.hideLoading()
+        // wx.hideLoading()
         that.setData({
-          wish_audio: e.path // 结束录音
+          wish_audio: e.data.path // 结束录音
         })
         wx.showToast({
           title: e.msg || '保存成功'

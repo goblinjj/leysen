@@ -13,7 +13,8 @@
   <!-- banner图   end -->
   <!-- fast entry -->
   <view class="fast-entry">
-    <view class='tit'>爱不宜迟,有礼不缺席</view>
+    <view class='tit'>爱不宜迟  有礼不缺席</view>
+    <view class='tit2'>— 致爱礼品卡 —</view>
     <view class="fast-list flex">
       <block wx:for="{{fastList}}" wx:key="id">
         <view class="fast-item" bindtap='routeConfig' data-id="{{item.id}}" data-url="{{item.type}}">
@@ -28,7 +29,7 @@
   <!-- fast entry    end-->
   <!-- 视频区域 -->
   <view class="video-content">
-    <view class='tit'>年度回馈,王室红毯之旅</view>
+    <view class='tit'>年度回馈  王室红毯之旅</view>
     <view class="video-list j-s flex">
       <view class="video-item">
         <video id="myVideo" poster='https://leysenstatic.zoomdoit.com/kaiqihongtan.png' src="https://leysenstatic.zoomdoit.com/gongbu.mp4">
@@ -46,7 +47,7 @@
   <!-- 视频区域   end -->
   <!-- foot -->
   <view class='foot-link flex j-c'>
-  <text catchtap='testtap'>购买历史</text>|
+  <!-- <text catchtap='testtap'>购买历史</text>| -->
     <text catchtap='toOrderList'>购买历史</text>|
     <navigator url="/pages/company/company" hover-class="none">Leysen1855简介</navigator>
   </view>
