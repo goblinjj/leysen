@@ -24,7 +24,7 @@ Page(
           },
           {
             id: "1",
-            title: "未付款",
+            title: "已付款",
             typeId: 2
           },
           {

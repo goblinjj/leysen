@@ -25,7 +25,11 @@
           </view>
         </view>
         <view class='order-btn flex j-e a-c'>
-          <block wx:if="{{item.status == 1}}">
+         <block wx:if="{{item.refund_time}}">
+           <button class='btn-default order-btn-status'>已退款</button>
+         </block>
+          <block wx:else>
+            <block wx:if="{{item.status == 1}}">
             <!-- 未付款 -->
             <button class='btn-default order-btn-status' data-index='{{index}}' catchtap='goOrder'>付款</button>
           </block>
@@ -51,6 +55,8 @@
             <!-- 转赠中 -->
             <button class='btn-default order-btn-status'>转赠中</button>
           </block>
+         </block>
+          
           <!-- <button catchtap='toUse' data-num='{{item.order_number}}' class='btn-default order-btn-status'>使用</button> -->
         </view>
       </view>
