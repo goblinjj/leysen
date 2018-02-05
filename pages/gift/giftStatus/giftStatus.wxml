@@ -17,6 +17,11 @@
          
           <view class="empty"></view>
         </view> 
+        <view class='tag-btn-content'>
+          <button class='get-tag' catchtap='toregist'>
+            <image mode="scaleToFill" src='/image/regbtn.png'></image>
+          </button>
+        </view>
     </view>
   </view>
 

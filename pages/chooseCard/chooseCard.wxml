@@ -81,7 +81,7 @@
     </view>
     <view class='choose-item flex'>
       <view class='label'>客服电话:</view>
-      <view class='right-choose' bindtap='phoneCall' id="4008289736">4008289736 按号码电话可直接拨打</view>
+      <view class='right-choose color_defalut' bindtap='phoneCall' id="4008289736">4008289736</view>
     </view>
     <view class='choose-item no-border flex'>
     <view class='label'>使用须知:</view>

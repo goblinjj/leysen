@@ -86,7 +86,7 @@ view{
   height: 100vh;
 }
 .tag-box {
-  background: fixed;
+  /* background: fixed; */
   left: 0;
   top: 0;
   /* background: rgba(0, 0, 0, 0.5); */

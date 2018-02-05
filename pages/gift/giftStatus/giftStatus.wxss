@@ -43,3 +43,8 @@
 .empty{
   height:200rpx;
 }
+.tag-btn-content .get-tag {
+  width: 432rpxrpx;
+  height: 114rpx;
+  opacity: 1;
+}

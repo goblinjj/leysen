@@ -3,8 +3,8 @@
 }
 .zan-quantity view {
   display: inline-block;
-  line-height: 20px;
-  padding: 5px 0;
+  line-height: 18px;
+   padding: 5px 0; 
   text-align: center;
   min-width: 40px;
   box-sizing: border-box;
@@ -14,7 +14,7 @@
 }
 .zan-quantity .zan-quantity__minus {
   border-right: none;
-  border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;  
 }
 .zan-quantity .zan-quantity__text {
   border: 1rpx solid #999;

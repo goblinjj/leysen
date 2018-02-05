@@ -13,7 +13,9 @@
 .gift-box.gift-box-single .gift-box-item .gift-img {
   margin: 0 auto;
 }
-
+.choose-item .right-choose.color_defalut{
+  color: #7375cb;
+}
 /* 多张图 */
 .scroll-view_H{
   white-space: nowrap;

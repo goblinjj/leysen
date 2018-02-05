@@ -26,6 +26,9 @@
   height: 610rpx;
   padding: 20rpx;
   opacity: 1;
+  position: absolute;
+  z-index: 3;
+  top: 50rpx;
 }
 .tag-inbox{
   width: 100%;
@@ -126,7 +129,7 @@
 }
 
 .tag-btn-content {
-  margin-top: 50rpx;
+  margin-top: 350rpx;
   opacity: 1;
 }
 

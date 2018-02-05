@@ -7,7 +7,11 @@ Page({
   data: {
   
   },
-
+  toregist:function(){
+    wx.navigateTo({
+      url: '/pages/login/register/register'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

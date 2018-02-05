@@ -15,9 +15,11 @@
   margin: 10rpx 0 30rpx;
 }
 .video-tit{
+  margin-top: 30rpx;
   font-size: 30rpx;
   color: #333;
   padding: 0 20rpx;
+  line-height: 30rpx;
 }
 .video-list{
   width: 100%;
@@ -25,10 +27,12 @@
 .video-list .video-item{
   width: 750rpx;
   padding: 20rpx;
+  border-radius: 8rpx;
 }
 .video-list .video-item video{
   width: 710rpx;
   height: 422rpx;
+  border-radius: 8rpx;
 }
 .video-list .video-item .info{
   color: #666;
