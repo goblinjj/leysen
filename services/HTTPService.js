@@ -175,6 +175,56 @@ class HTTPService {
         });
     }
 
+    static UPLOADFILE({ url = "", payload = {}, extend_headers = {}, method = "POST"}) {
+    
+      return new Promise((resolve, reject) => {
+        wx.uploadFile({
+          url,
+          filePath: payload.filePath,
+          name:"file",
+          header: {
+            'content-type': 'multipart/form-data'  ,
+            ...HTTPService.requestHeader(payload, method),
+            ...extend_headers
+          },
+          method,
+          dataType: "json",
+          success: responseJSON => {
+            //console.log('接口的返回原文:',responseJSON)
+            const { data, statusCode, header } = responseJSON;
+            console.log('不成功')
+            console.log(payload)
+            console.log(url)
+            console.log(statusCode)
+            // console.log(responseJSON)
+            //HTTP通讯层状态处理
+            if (statusCode === 200) {
+              //API业务层逻辑处理
+              const { data, code, msg } = responseJSON.data;
+              console.log('成功')
+              console.log(responseJSON)
+              if (code === 1) {
+                resolve(responseJSON.data);
+              } else {
+                reject(HTTPService.api_exception_process(responseJSON.data));
+              }
+            } else {
+              //HTTP通讯层异常
+              console.log('通讯层异常成功')
+              reject(HTTPService.exception_process(responseJSON));
+            }
+          },
+          fail: () => {
+            //console.log('接口请求失败');
+            reject(HTTPService.error_process());
+          },
+          complete: () => {
+            //console.log('接口请求完成');
+          }
+        });
+      });
+    }
+
     static GET({ url, payload, extend_headers }) {
         return this.REQUEST({ url, payload, extend_headers, method: "GET" });
     }

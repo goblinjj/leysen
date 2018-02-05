@@ -1,5 +1,6 @@
 import { HTTPService as HTTP } from '../../services/HTTPService';
 const TOSEND = getApp().globalData.API.SEND.TOSEND;
+const UPAUDIO = getApp().globalData.API.SEND.UPAUDIO;
 // 录音
 const recorderManager = wx.getRecorderManager();
 const innerAudioContext = wx.createInnerAudioContext()
@@ -103,11 +104,29 @@ stopRecode: function () {
     recorderManager.onStop((res) => {
       this.tempFilePath = res.tempFilePath;
       console.log(res)
-      console.log('停止录音', res.tempFilePath)
-      // const { tempFilePath } = res
-      that.setData({
-        wish_audio: res.tempFilePath // 结束录音
+      console.log('停止录音', res.tempFilePath);
+      var file = res.tempFilePath;
+      wx.showLoading({
+        title: '保存中',
+      });
+      HTTP.UPLOADFILE({
+        ...UPAUDIO,
+        payload: {
+          filePath: file,
+        }
+      }).then((e) => {
+        wx.hideLoading()
+        that.setData({
+          wish_audio: e.path // 结束录音
+        })
+        wx.showToast({
+          title: e.msg || '保存成功'
+        });
+        setTimeout(function () {
+          wx.hideLoading()
+        }, 2000)
       })
+      console.info(that.data.wish_audio);
     })
   },
   //播放声音

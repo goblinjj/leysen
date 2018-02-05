@@ -1,9 +1,10 @@
 <!--pages/tagIntroduction/tagIntroduction.wxml-->
+<image class='bg-img' src='../../../image/bg.jpg'></image>
 <view class="tag-content">
   <view class='tag-box flex j-c a-c'>
     <view class='tag-inbox'>
       <view class='tag-img'>
-        <image src='/image/giftBox.png' mode='widthFix'></image>
+        
         <view class='gift-notice'>
           <view class='gift-name flex j-c a-c'>
             <text class='line'></text>
@@ -12,10 +13,11 @@
           </view>
           <view class='gift-stadus'>开启宝盒即可领取</view>
         </view>
+        <image src='/image/giftBox1.png' mode='widthFix'></image>
       </view>
       <view class='tag-btn-content'>
         <button class='get-tag' catchtap='openbox'>
-          <image mode="scaleToFill" src='/image/getBox.png'></image>
+          <image mode="scaleToFill" src='/image/getBox2.png' class='getBox'></image>
         </button>
       </view>
     </view>
