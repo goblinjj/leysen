@@ -152,6 +152,9 @@ Page({
               }
             }).then((e) => {
               console.log(e.data)
+              that.setData({
+                reciveGift: false, //领取成功关闭弹框
+              })
               wx.showToast({
                 title: e.msg || '领取成功',
               });
@@ -201,10 +204,10 @@ Page({
     var that = this
     console.log(options)
     // let order_number = '2018020479776'
-    if (options.order_number){
+    if (options.order_number) {
       that.setData({
         order_number: options.order_number
-      },function(){
+      }, function () {
         that.giftInfo(that.data.order_number)
       })
     }

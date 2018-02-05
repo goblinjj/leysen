@@ -218,11 +218,11 @@ Page(
                     wx.showToast({
                       title: "支付成功",
                       complete: function () {
-                        // setTimeout(() => {
-                        //   wx.redirectTo({
-                        //     url: "/pages/my/myOrder/order_list/order_list"
-                        //   });
-                        // }, 1500);
+                        setTimeout(() => {
+                          wx.navigateTo({
+                            url: '/pages/orderAction/send?order_number=' + that.data.order_id + '&pic=' + that.data.cardList[that.data.myindex].pic_url + '&name=' + that.data.cardList[that.data.myindex].title
+                          });
+                        }, 1500);
                       }
                     });
                   })
