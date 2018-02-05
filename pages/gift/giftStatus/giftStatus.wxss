@@ -41,10 +41,14 @@
   z-index: 1;
 }
 .empty{
-  height:200rpx;
+  height:140rpx;
 }
 .tag-btn-content .get-tag {
-  width: 432rpxrpx;
+  width: 432rpx;
   height: 114rpx;
   opacity: 1;
+}
+.tag-btn-content button.registBtn{
+   width: 552rpx;
+  height: 93rpx;
 }

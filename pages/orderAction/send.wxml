@@ -34,7 +34,7 @@
       </view>
  <!-- <button class='btn-blue' open-type="share" formType="submit"> 赠送给好友</button> -->
       <button class='btn-blue_send' open-type="share" > 
-      <image src='../../../image/send.png'></image>
+      <image src='../../image/send.png'></image>
       </button>
     </form>
 

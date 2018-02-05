@@ -11,6 +11,7 @@
           <!-- 有库存并且领到 1 -->
           <view class='gift-stadus' wx:if="{{status == 1}}">恭喜您领取成功，欢迎前往门店领取，
 领取信息可在购买记录查询</view>
+ <view class='gift-stadus' wx:if="{{status == 2}}">很抱歉，您已经领取礼品</view>
           <!-- 有库存没领到 3-->
            <view class='gift-stadus' wx:if="{{status == 3}}">很抱歉，没有领到礼品，
 欢迎继续注册会员，领取1000积分</view> 
@@ -18,8 +19,8 @@
           <view class="empty"></view>
         </view> 
         <view class='tag-btn-content' wx:if="{{status == 3}}">
-          <button class='get-tag' catchtap='toregist'>
-            <image mode="scaleToFill" src='/image/regist.png'></image>
+          <button class='get-tag registBtn' catchtap='toregist'>
+            <image mode="scaleToFill" src='/image/regist.png' class='registBtn'></image>
           </button>
         </view>
     </view>

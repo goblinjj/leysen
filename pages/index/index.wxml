@@ -34,12 +34,14 @@
       <view class="video-item">
         <video id="myVideo" poster='https://leysenstatic.zoomdoit.com/kaiqihongtan.png' src="https://leysenstatic.zoomdoit.com/gongbu.mp4">
         </video>
+        <text>开启【红毯之旅】</text>
       </view>
       <view class="video-item">
         <view class='video-entry'>
           <navigator class='in-video-entry' url='/pages/video/video'>
             <image mode='scaleToFill' src='https://leysenstatic.zoomdoit.com/huojiang.png'></image>
           </navigator>
+          <text>揭晓【获奖名单】</text>
         </view>
       </view>
     </view>

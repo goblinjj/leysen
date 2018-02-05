@@ -35,7 +35,7 @@ background-color: initial;
   line-height: 50rpx;
 }
 .btn-blue_send{
-  margin-top: 120rpx;
+  margin-top: 60rpx;
    width: 319rpx;
   height: 101rpx;
   border: 0;

@@ -8,7 +8,7 @@ page {
   line-height: 1.6;
 }
 view{
-  box-sizing: border-box;
+   box-sizing: border-box; 
   opacity: 1;
 }
 /* common */
@@ -104,7 +104,7 @@ view{
   border: none;
 }
 .tag-btn-content .get-tag {
-  width: 509rpx;
+   width: 509rpx; 
   height: 91rpx;
   opacity: 1;
 }

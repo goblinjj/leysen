@@ -111,7 +111,7 @@
 .choose-ul{
   background: #fff;
   padding: 30rpx 20rpx 40rpx;
-  font-size: 25rpx;
+  font-size: 26rpx;
 }
 .choose-item{
   line-height: 40rpx;
@@ -138,11 +138,11 @@
 }
 .notice_info_conten{
   height: 180rpx;
-  font-size: 24rpx;
+  font-size: 26rpx;
   line-height: 28rpx;
 }
 .notice_info_conten .title1{
-  font-size: 25rpx;
+  font-size: 26rpx;
   font-weight: bold;
   line-height: 28rpx;
   width: 100%;

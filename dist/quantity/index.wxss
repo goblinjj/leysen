@@ -15,6 +15,7 @@
 .zan-quantity .zan-quantity__minus {
   border-right: none;
   border-radius: 2px 0 0 2px;  
+  box-sizing:inherit;
 }
 .zan-quantity .zan-quantity__text {
   border: 1rpx solid #999;

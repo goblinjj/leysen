@@ -9,7 +9,7 @@ Page({
   },
   toregist:function(){
     wx.navigateTo({
-      url: '/pages/login/register/register'
+      url: '/pages/gift/register/register'
     })
   },
   /**

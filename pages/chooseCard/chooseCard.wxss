@@ -205,11 +205,11 @@
 }
 .notice_info_conten{
   height: 320rpx;
-  font-size: 24rpx;
+  font-size: 28rpx;
   line-height: 28rpx;
 }
 .notice_info_conten .title1{
-  font-size: 26rpx;
+  font-size: 28rpx;
   font-weight: bold;
   line-height: 32rpx;
   width: 100%;
