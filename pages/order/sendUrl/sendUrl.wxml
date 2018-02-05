@@ -3,7 +3,7 @@
     <view class='send-img'>
       <image mode='aspectFit' src='{{giftInfo.category_pic}}'></image>
     </view>
-    <view class='info'>收到卡片，已放到卡包</view>
+    <view class='info'>收到卡片，已放到购买历史</view>
     <view class='send-tit font32'>王室甄选礼品卡——{{giftInfo.title}}</view>
     <view class='price'>{{giftInfo.price}}</view>
   </view>
