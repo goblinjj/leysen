@@ -37,6 +37,7 @@ const API_CONST = {
     SEND: {
       TOSEND: { url: `${API_URL}/shop/order/give`, method: "POST" },
       GETGIFT:{  url: `${API_URL}/shop/order/get`, method: "POST" },
+      UPAUDIO: { url: `${API_URL}/shop/give/upload`, method: "POST" },
       GIFTINFO: { url: `${API_URL}/shop/give/giveInfo`, method: "POST"}
     }
 };

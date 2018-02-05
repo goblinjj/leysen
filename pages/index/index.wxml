@@ -46,6 +46,7 @@
   <!-- 视频区域   end -->
   <!-- foot -->
   <view class='foot-link flex j-c'>
+  <text catchtap='testtap'>购买历史</text>|
     <text catchtap='toOrderList'>购买历史</text>|
     <navigator url="/pages/company/company" hover-class="none">Leysen1855简介</navigator>
   </view>

@@ -104,7 +104,7 @@ view{
 }
 .tag-btn-content .get-tag {
   width: 432rpx;
-  height: 137rpx;
+  height: 206rpx;
 }
 
 .tag-btn-content .get-tag image {

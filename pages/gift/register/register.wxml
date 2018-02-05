@@ -1,3 +1,4 @@
+<image class='bg-img' src='../../../image/bg.png'></image>
 <view class="tag-content">
   <view class='tag-box flex j-c a-c'>
     <view class='tag-inbox'>

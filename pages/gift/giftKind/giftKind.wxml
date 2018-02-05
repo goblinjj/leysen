@@ -1,4 +1,5 @@
 <!--pages/tagIntroduction/tagIntroduction.wxml-->
+<image class='bg-img' src='../../../image/bg2.jpg'></image>
 <view class="tag-content" v-if="showGift">
   <view class='tag-box flex j-c a-c'>
     <view class='tag-inbox'>
@@ -38,7 +39,7 @@
       </view>
       <view class='tag-btn-content' hidden="{{giftBox.code == 2}}">
         <button class='get-tag' catchtap='openbox'>
-          <image mode="scaleToFill" src='/image/gitNow.png'></image>
+          <image mode="scaleToFill" src='/image/regbtn.png'></image>
         </button>
       </view>
     </view>

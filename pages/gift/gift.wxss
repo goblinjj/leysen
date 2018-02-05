@@ -1,4 +1,11 @@
-
+.bg-img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
 
 
 .tag-inbox {
@@ -6,26 +13,27 @@
 }
 
 .tag-box .tag-img {
-  width: 600rpx;
-  margin-bottom: 30rpx;
+  width: 100%;
+  /* margin-bottom: 30rpx; */
   position: relative;
 }
 
 .tag-box .tag-img image {
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
   display: block;
+  margin: 10rpx auto;
 }
 
 
 .tag-btn-content {
-  padding: 90rpx 60rpx 0;
+  padding: 0 60rpx 0;
 }
 
 .gift-notice{
   color: #fff;
   position: absolute;
-  top: 40rpx;
+  top: -240rpx;
   left: 0;
   text-align: center;
   width: 100%;
@@ -34,10 +42,17 @@
   margin: 0 20rpx;
   font-size: 34rpx;
   line-height: 80rpx;
+  color: #1d2088;
 }
 .line{
   display: block;
   width: 40rpx;
   height: 2rpx;
-  background: #fff;
+  background: #1d2088;
+}
+.gift-stadus{
+  color: #1d2088;
+}
+.getBox{
+
 }
