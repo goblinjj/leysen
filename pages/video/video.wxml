@@ -3,10 +3,16 @@
     <swiper class="video-banner" circular="true" indicator-color="rgba(255,255,255,.3)" indicator-active-color="#FFF" indicator-dots autoplay circular interval="{{5000}}" duration="{{300}}">
       <!-- <block wx:for="{{widget.widget_content.data}}" wx:key="image_id"> -->
       <swiper-item>
-        <image mode='scaleToFill' src='https://leysen.zoomdoit.com/static/admin/hongtan/lunbo1.png'></image>
+        <image mode='scaleToFill' src='https://leysenstatic.zoomdoit.com/banner1.png'></image>
       </swiper-item>
       <swiper-item>
-        <image mode='scaleToFill' src='https://leysen.zoomdoit.com/static/admin/hongtan/lunbo2.jpeg'></image>
+        <image mode='scaleToFill' src='https://leysenstatic.zoomdoit.com/banner2.png'></image>
+      </swiper-item>
+      <swiper-item>
+        <image mode='scaleToFill' src='https://leysenstatic.zoomdoit.com/banner3.png'></image>
+      </swiper-item>
+      <swiper-item>
+        <image mode='scaleToFill' src='https://leysenstatic.zoomdoit.com/banner4.png'></image>
       </swiper-item>
       <!-- </block> -->
     </swiper>
@@ -14,12 +20,12 @@
   <view class='video-tit'>年度回馈</view>
   <view class="video-list">
     <view class='video-item'>
-      <video bindplay='playVideo' id="myVideo2" src="https://leysenstatic.zoomdoit.com/banjiang.mp4">
+      <video bindplay='playVideo' poster="https://leysenstatic.zoomdoit.com/video1.png" id="myVideo2" src="https://leysenstatic.zoomdoit.com/banjiang.mp4">
       </video>
       <view class='info'>Leysen1855莱绅通灵年度回馈王室礼遇， 比利时王室&柏林电影节 红毯之旅，2018年首批王室幸运大奖颁奖典礼</view>
     </view>
     <view class='video-item'>
-      <video bindplay='playVideo' id="myVideo2" src="https://leysenstatic.zoomdoit.com/jieshao.mp4">
+      <video bindplay='playVideo' id="myVideo3" poster="https://leysenstatic.zoomdoit.com/video2.png" src="https://leysenstatic.zoomdoit.com/jieshao.mp4">
       </video>
       <view class='info'>
         Leysen1855莱绅通灵CEO沈东军先生亲自为比利时王室&柏林电影节红毯之旅代言

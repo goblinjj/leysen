@@ -1,6 +1,6 @@
 <view class="register-content">
   <view class='full-banner'>
-    <image mode='widthFix' src='/image/banner-test.jpg'></image>
+    <image mode='widthFix' src='https://leysenstatic.zoomdoit.com/zhuce.png'></image>
   </view>
   <view class='register-info'>
     <form bindsubmit="formSubmit">

@@ -2,20 +2,14 @@
 <view class="index container" wx:if="{{showIndex}}">
   <!-- banner图   end -->
   <swiper class="banner-index" circular="true" indicator-color="rgba(255,255,255,.3)" indicator-active-color="#FFF" indicator-dots autoplay circular interval="{{5000}}" duration="{{300}}">
-    <!-- <block wx:for="{{widget.widget_content.data}}" wx:key="image_id"> -->
+   
     <swiper-item>
-      <image src='/image/banner-test.jpg'></image>
+      <image src='https://leysenstatic.zoomdoit.com/homebanner1.png'></image>
     </swiper-item>
     <swiper-item>
-      <image src='http://img1.imgtn.bdimg.com/it/u=369772956,2257164084&fm=214&gp=0.jpg'></image>
+      <image src='https://leysenstatic.zoomdoit.com/homebanner2.png'></image>
     </swiper-item>
-    <!-- </block> -->
   </swiper>
-  <!-- <view class='banner-index'>
-    <navigator url="#" hover-class="none">
-      <image src='http://pic1.win4000.com/wallpaper/8/53c5f3db3d3d6.jpg?          down'></image>
-    </navigator>
-  </view> -->
   <!-- banner图   end -->
   <!-- fast entry -->
   <view class="fast-entry">
@@ -23,12 +17,10 @@
     <view class="fast-list flex">
       <block wx:for="{{fastList}}" wx:key="id">
         <view class="fast-item" bindtap='routeConfig' data-id="{{item.id}}" data-url="{{item.type}}">
-          <!-- <navigator class='fast-link' url="/pages/chooseCard/chooseCard" hover-class="none"> -->
           <view class='fast-img'>
             <image mode='aspectFit' src='{{item.pic_url}}'></image>
           </view>
           <view class='fast-tit'>{{item.name}}</view>
-          <!-- </navigator> -->
         </view>
       </block>
     </view>
@@ -39,19 +31,13 @@
     <view class='tit'>年度回馈,王室红毯之旅</view>
     <view class="video-list j-s flex">
       <view class="video-item">
-        <video id="myVideo" src="https://leysenstatic.zoomdoit.com/gongbu.mp4">
-          <!-- <cover-view wx:if="{{!showCover}}" class="controls">
-            <cover-image class="imgCover" src="http://pic1.win4000.com/wallpaper/8/53c5f3db3d3d6.jpg?down" />
-          </cover-view> -->
+        <video id="myVideo" poster='https://leysenstatic.zoomdoit.com/kaiqihongtan.png' src="https://leysenstatic.zoomdoit.com/gongbu.mp4">
         </video>
       </view>
       <view class="video-item">
-        <!-- <video bindplay='playVideo' id="myVideo2" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
-          control poster="http://pic1.win4000.com/wallpaper/8/53c5f3db3d3d6.jpg?down">
-        </video> -->
         <view class='video-entry'>
           <navigator class='in-video-entry' url='/pages/video/video'>
-            <image mode='scaleToFill' src='https://leysen.zoomdoit.com/static/admin/hongtan/kv.png'></image>
+            <image mode='scaleToFill' src='https://leysenstatic.zoomdoit.com/huojiang.png'></image>
           </navigator>
         </view>
       </view>

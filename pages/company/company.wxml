@@ -4,13 +4,13 @@
 <view class='pd-15'>
 <text class='font32 title-l'>公司简介</text>
 <view class='mgt-35'>
-<text class='title font27'>发展史：</text>
-<text class='company-bd font27'>颠覆性互联时代高性价比的钻石，钻戒定制平台。让消费者只需实惠的价格，就能买到上乘的钻石！定制您的专属钻戒！</text>
+<!-- <text class='title font27'>发展史：</text> -->
+<text class='company-bd font27'>Leysen1855莱绅通灵是一个坚持为消费者创造值得“为下一代珍藏”的比利时王室珠宝品牌。品牌诞生于1855年，传承比利时百年珠宝文化历史，被比利时王室授予“王室珠宝供应商”，连续十年成为柏林电影节官方合作伙伴。</text>
 </view>
 <view>
-<text class='title font27'>发展史：</text>
-<text class='company-bd font27'>颠覆性互联时代高性价比的钻石，钻戒定制平台。让消费者只需实惠的价格，就能买到上乘的钻石！定制您的专属钻戒！</text>
-</view>
+ <!-- <text class='title font27'>发展史：</text>
+<text class='company-bd font27'>颠覆性互联时代高性价比的钻石，钻戒定制平台。让消费者只需实惠的价格，就能买到上乘的钻石！定制您的专属钻戒！</text> -->
+</view> 
 
 
 </view>

@@ -24,7 +24,8 @@ image{
 }
 .company-bd{
    display: inline-block;
-  width: 80%;
+  width: 100%;
+  padding:20rpx;
   vertical-align: top;
   color: #999;
 
