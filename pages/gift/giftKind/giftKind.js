@@ -8,7 +8,8 @@ Page({
   data: {
     showGift: false,
     cat_id: '',
-    giftBox: {}
+    giftBox: {},
+    order_id:''
   },
   //打开宝盒
   giftInfo: function () {
@@ -27,7 +28,7 @@ Page({
         giftBox: e.data,
         showGift: true,
         showMsg: e.msg,
-        // order_id: e.data.order_id
+        order_id: e.data.order_id
       })
       // console.log(e.data)
       wx.hideLoading()

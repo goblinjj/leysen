@@ -17,13 +17,13 @@
          
           <view class="empty"></view>
         </view> 
-        <view class='tag-btn-content'>
+        <view class='tag-btn-content' wx:if="{{status == 3}}">
           <button class='get-tag' catchtap='toregist'>
-            <image mode="scaleToFill" src='/image/regbtn.png'></image>
+            <image mode="scaleToFill" src='/image/regist.png'></image>
           </button>
         </view>
     </view>
   </view>
 
 </view>
-<image class='bg-img' src='../../../image/bg.jpg'></image>
+<image class='bg-img' src='../../../image/bg2.jpg'></image>

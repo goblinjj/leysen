@@ -24,16 +24,28 @@ margin: 0 auto 30rpx;
 }
 .btn-blue{
   display: block;
-width:80%;
+width:319rpx;
+height: 101rpx;
 margin-top: 50rpx;
+background-color: initial;
 }
 .change-action .in-change-action { 
   width: 310rpx;
   height: 50rpx;
   line-height: 50rpx;
-  
+}
+.btn-blue_send{
+  margin-top: 120rpx;
+   width: 319rpx;
+  height: 101rpx;
+  border: 0;
+  background-color: #fff;
 
 }
+.btn-blue_send::after{
+  border: 0;
+}
+.btn-blue_send image{width: 100%;height: 100%;}
 .change-btn{
   width: 50%;
   text-align: center;

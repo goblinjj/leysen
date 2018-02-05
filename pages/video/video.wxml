@@ -17,7 +17,7 @@
       <!-- </block> -->
     </swiper>
   </view>
-  <view class='video-tit'>年度回馈</view>
+  <view class='video-tit'>红毯之旅  梦想征程</view>
   <view class="video-list">
     <view class='video-item'>
       <video bindplay='playVideo' poster="https://leysenstatic.zoomdoit.com/video1.png" id="myVideo2" src="https://leysenstatic.zoomdoit.com/banjiang.mp4">

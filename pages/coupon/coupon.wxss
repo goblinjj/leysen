@@ -138,7 +138,7 @@
 }
 .notice_info_conten{
   height: 180rpx;
-  font-size: 22rpx;
+  font-size: 24rpx;
   line-height: 28rpx;
 }
 .notice_info_conten .title1{

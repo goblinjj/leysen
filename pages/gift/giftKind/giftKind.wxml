@@ -37,9 +37,9 @@
         </block>
         <!-- 已经领取 -->
         <block wx:else>
-          <view class='gift-notice top_00'>
+          <!-- <view class='gift-notice top_00'>
             <view class='gift-stadus'>您已领取过礼品</view>
-          </view>
+          </view> -->
         </block>
       </view>
       <view class='tag-btn-content' hidden="{{giftBox.code == 2}}">

@@ -18,7 +18,7 @@
       </view>
       <view class='register-item flex a-c'>
         <view class='register-input phone-code-info'>
-          <input name='phonecode' placeholder="请输入验证码" style='width:360rpx;margin-left:80rpx;'/>
+          <input name='phonecode' placeholder="请输入验证码" style='width:368rpx;margin-left:70rpx;'/>
         </view>
         <view class='code-content'>
           <view class='code-info' >

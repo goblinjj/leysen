@@ -82,11 +82,11 @@ page {
 }
 
 .comfirm-content{
-  margin-top: 50rpx;
+  margin-top: 150rpx;
 }
 .comfirm-content .comfirm-btn {
-  width: 450rpx;
-  height: 125rpx;
+  width: 319rpx;
+  height: 101rpx;
   background: #fff;
   padding: 0;
 }

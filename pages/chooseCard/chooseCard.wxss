@@ -30,7 +30,7 @@
 .gift-box-item .gift-img {
   width: 460rpx;
   height: 300rpx;
-   border: 2rpx solid transparent;
+   border: 0rpx solid transparent;
    border-radius: 8rpx;
    overflow: hidden;
 }
@@ -45,6 +45,7 @@
 .gift-tit{
   line-height: 70rpx;
   text-align: center;
+  margin-top: -70rpx;
 }
 .gift-tit text{
   display: inline-block;
@@ -204,7 +205,7 @@
 }
 .notice_info_conten{
   height: 320rpx;
-  font-size: 22rpx;
+  font-size: 24rpx;
   line-height: 28rpx;
 }
 .notice_info_conten .title1{

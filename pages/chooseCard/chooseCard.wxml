@@ -21,14 +21,16 @@
       <view wx:for="{{cardList}}" bindtap='chooseCard' data-index="{{index}}" wx:key="id" data-card="{{item.id}}" class="gift-box-item scroll-view-item_H">
         <view class="gift-img {{myindex == index?'active':''}}">
           <image mode="aspectFit" src='{{item.pic_url}}'></image>
+         
         </view>
-        <view class='gift-tit font27 elis'>
-          <text >{{item.title}}</text>
-        </view>
+        
       </view>
       <view class="gift-box-item scroll-view-item_H demo-text-9"></view>
-    </scroll-view>
+    </scroll-view>    
   </view>
+  <view class='gift-tit font27 elis'>
+          <text >{{cardList[myindex].title}}</text>
+        </view>
   <!-- 多张图    end-->
   <!-- 卡片选择   end -->
   <!-- 选择礼品 -->

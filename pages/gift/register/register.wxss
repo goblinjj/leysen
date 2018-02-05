@@ -16,6 +16,8 @@
 }
 .tag-box{
   background: none;
+  position: relative;
+  top: -150rpx;
 }
 
 .tag-inbox{
@@ -25,12 +27,12 @@
 .tag-box .ingift-register{
  background: #bc8a47;
   width:100%;
-  height: 610rpx;
+  height: 495rpx;
   padding: 20rpx;
   opacity: 1;
 
 }
-
+.gift-name{opacity: 1;}
 .gift-name .tit{
   margin: 0 20rpx;
   font-size: 34rpx;
@@ -47,9 +49,11 @@
 
 
 .register-info{
+  opacity: 1;
 }
 .register-info .register-item{
   padding: 16rpx 0rpx;
+  opacity: 1;
 }
 .register-info .register-item .label{
   text-align: right;
@@ -59,6 +63,7 @@
   color: #fff;
   padding-right: 5rpx;
   margin-left: 50rpx;
+  opacity: 1;
 }
 .register-info .register-item .register-input  input{
   width: 400rpx;
@@ -68,14 +73,17 @@
   height: 70rpx;
   padding-left: 20rpx;
   background: #fff;
+  opacity: 1;
 }
 .register-info .register-item .register-input.register-code input{
   width: 180rpx;
+  opacity: 1;
 }
 .code-content {
   width: 180rpx;
   overflow: hidden;
   margin-left: 40rpx;
+  opacity: 1;
 }
 
 .change-code{
@@ -84,19 +92,23 @@
   line-height: 30rpx;
   text-align: right;
   padding-right: 15rpx;
+  opacity: 1;
 }
 .code-content .code-info{
   width: 180rpx;
   height: 70rpx;
   overflow: hidden; 
+  opacity: 1;
 }
 .code-content .code-info.phone-code-info{
   background: none;
+  opacity: 1;
 }
 .code-content .code-info  image{
    width: 100%;
    height: 100%;
    display: block;
+   opacity: 1;
 }
 .get-code-btn{
   font-size: 28rpx;
@@ -106,6 +118,7 @@
   background: #0fbe13;
   height: 70rpx;
   line-height: 70rpx;
+  opacity: 1;
 }
 .register-info .register-item .register-input.phone-code-info{
   /* padding-left: 18rpx; */
@@ -113,6 +126,7 @@
 .register-info .register-item .register-input.phone-code-info input{
   width: 180rpx;
 }
+.ingift-register view,.ingift-register text{opacity: 1;}
 .tag-btn-content{
   margin-top: 100rpx;
 }

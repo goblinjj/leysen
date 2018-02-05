@@ -36,11 +36,14 @@
   width: 233rpx;
   height: 455rpx;
   margin: 0 autol;
+  position: relative;
+  top:-100rpx;
 }
 .tag-box .tag-img image.bbox {
   width: 297rpx;
   height: 365rpx;
-   margin: 0 autol;
+  
+   margin: -100rpx autol 0 auto;
 }
 
 .tag-btn-content {
@@ -69,13 +72,13 @@
 .gift-notice{
   color: #1d2088;
   position: absolute;
-  top: -200rpx;
+  top: -250rpx;
   left: 0;
   text-align: center;
   width: 100%;
 }
 .top_00{
-  top:0rpx;
+  top:-20rpx;
 }
 .gift-notice .tit{
   margin: 0 20rpx;
