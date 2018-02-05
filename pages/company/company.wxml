@@ -1,6 +1,6 @@
 <!--pages/company/company.wxml-->
 <view class='main pdt-35'>
-<image src='https://leysen.zoomdoit.com/static/admin/hongtan/kv.png'  mode="widthFix"></image>
+<image src='https://leysenstatic.zoomdoit.com/jianjie.png'  mode="widthFix"></image>
 <view class='pd-15'>
 <text class='font32 title-l'>公司简介</text>
 <view class='mgt-35'>

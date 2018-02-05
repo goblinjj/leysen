@@ -11,7 +11,21 @@ Page({
     longitude: '',
     storeList: []
   },
-
+  gotoMap:function(e){
+    var lng = e.currentTarget.dataset.lngb;
+    var lat = e.currentTarget.dataset.latb;
+    var name = e.currentTarget.dataset.name;
+    var address = e.currentTarget.dataset.address;
+    var floatLng = parseFloat(lng);
+    var floatLat = parseFloat(lat);
+    wx.openLocation({
+      latitude: floatLat,
+      longitude: floatLng,
+      name:name,
+      address:address,
+      scale: 28
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

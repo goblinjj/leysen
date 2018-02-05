@@ -10,7 +10,7 @@
         <view class='address elis'>{{item.address}}</view>
       </view>
       <view class='right-info'>
-        <image class='local-icon' src='/image/storeList_07.png'></image>
+        <image class='local-icon' src='/image/storeList_07.png' bindtap='gotoMap' data-name="{{item.name}}" data-address="{{item.address}}" data-latb='{{item.latb}}' data-lngb='{{item.lngb}}'></image>
         <view class='distance'>{{item.distance}}</view>
       </view>
     </view>

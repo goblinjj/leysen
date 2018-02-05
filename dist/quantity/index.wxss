@@ -33,7 +33,7 @@
 .zan-quantity .zan-quantity--disabled {
   background: #f8f8f8;
   color: #bbb;
-  border-color: #e8e8e8;
+  border-color: #bfbfbf;
 }
 .zan-quantity--small view {
   min-width: 36px;
@@ -41,6 +41,6 @@
 }
 .zan-quantity--small .zan-quantity__text {
   width: 36px;
-  line-height: 28px;
+  line-height: 28px; 
   height: 28px;
 }
