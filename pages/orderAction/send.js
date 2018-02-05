@@ -95,7 +95,7 @@ startRecode:function() {
 //  录音结束
  //停止录音
 stopRecode: function () {
-  var that = this
+  const that = this
   console.log('停止录音')
   this.setData({
     isRecode: false // 结束录音
@@ -109,34 +109,44 @@ stopRecode: function () {
       // wx.showLoading({
       //   title: '保存中',
       // });
-      HTTP.UPLOADFILE({
-        ...UPAUDIO,
-        payload: {
-          filePath: file,
+      // HTTP.UPLOADFILE({
+      //   ...UPAUDIO,
+      //   payload: {
+      //     filePath: file,
+      //   }
+      // }).then((e) => {
+      //   // wx.hideLoading()
+      //   that.setData({
+      //     wish_audio: e.path // 结束录音
+      //   })
+      //   wx.showToast({
+      //     title: e.msg || '保存成功'
+      //   });
+      //   setTimeout(function () {
+      //     wx.hideLoading()
+      //   }, 2000)
+      
+      var url = UPAUDIO.url;
+      wx.uploadFile({
+        url: url,
+        filePath: file,
+        name: 'file',
+        header: {
+          'content-type': 'multipart/form-data'
+        },
+        success: function (res) {
+          var str = res.data;  
+          var data = JSON.parse(str);  
+          console.info("=====>"+data.data);
+          that.setData({
+          wish_audio: data.data // 结束录音
+        })
+
+          console.info("===+++===" + that.data.wish_audio);
         }
-      }).then((e) => {
-        // wx.hideLoading()
-        that.setData({
-          wish_audio: e.data.path // 结束录音
-        })
-        wx.showToast({
-          title: e.msg || '保存成功'
-        });
-        setTimeout(function () {
-          wx.hideLoading()
-        }, 2000)
-        })
-        .catch(e => {
-          wx.showToast({
-            title: e.noticeMessage || '加载失败',
-            image: "/image/warn.png"
-          });
-          setTimeout(function () {
-            wx.hideLoading()
-          }, 2000)
-        });
-      console.info(that.data.wish_audio);
+      })
     })
+    
   },
   //播放声音
   play: function () {

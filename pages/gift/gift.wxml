@@ -13,11 +13,11 @@
           </view>
           <view class='gift-stadus'>开启宝盒即可领取</view>
         </view>
-        <image src='/image/giftBox1.png' mode='widthFix'></image>
+        <image src='https://leysen.zoomdoit.com/static/admin/images/giftBox1.png' mode='widthFix'></image>
       </view>
       <view class='tag-btn-content'>
         <button class='get-tag' catchtap='openbox'>
-          <image mode="scaleToFill" src='/image/getBox2.png' class='getBox'></image>
+          <image mode="scaleToFill" src='/image/take.png' class='getBox'></image>
         </button>
       </view>
     </view>

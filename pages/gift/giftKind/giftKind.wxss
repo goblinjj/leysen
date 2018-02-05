@@ -30,17 +30,23 @@
   width: 600rpx;
   margin-bottom: 30rpx;
   position: relative;
+  text-align: center;
 }
-
-.tag-box .tag-img image {
-  width: 100%;
-  height: 100%;
-  display: block;
+.tag-box .tag-img image.bear {
+  width: 233rpx;
+  height: 455rpx;
+  margin: 0 autol;
 }
-
+.tag-box .tag-img image.bbox {
+  width: 297rpx;
+  height: 365rpx;
+   margin: 0 autol;
+}
 
 .tag-btn-content {
-  padding: 90rpx 60rpx 0;
+  position: absolute;
+  bottom: 360rpx;
+   padding: 0rpx 50rpx 0; 
 }
 
 .tag-btn-content button {
@@ -51,8 +57,8 @@
   border: none;
 }
 .tag-btn-content .get-tag {
-  width: 432rpx;
-  height: 114rpx;
+  width: 509rpx;
+  height: 91rpx;
 }
 
 .tag-btn-content .get-tag image {
@@ -63,10 +69,13 @@
 .gift-notice{
   color: #1d2088;
   position: absolute;
-  top: 40rpx;
+  top: -200rpx;
   left: 0;
   text-align: center;
   width: 100%;
+}
+.top_00{
+  top:0rpx;
 }
 .gift-notice .tit{
   margin: 0 20rpx;

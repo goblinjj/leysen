@@ -20,15 +20,20 @@ page {
   width: 230rpx;
   overflow: hidden;
   color: #666;
-  padding-right: 30rpx;
+  padding-right: 10rpx;
+}
+.register-info .register-item .label .split{
+  width: 50%;
+  display: inline-block;
 }
 .register-info .register-item .register-input  input{
   width: 450rpx;
   overflow: hidden;
-  border-radius: 7rpx;
+  border-radius: 10rpx;
   border: 1rpx solid #bfbfbf;
   height: 70rpx;
   padding-left: 20rpx;
+  background-color: #fcfcfc;
 }
 .register-info .register-item .register-input.register-code input{
   width: 215rpx;
@@ -61,7 +66,7 @@ page {
   text-align: center;
   border: none;
   color: #fff;
-  background: #e3921e;
+  background: #0fbe13;
   height: 70rpx;
   line-height: 70rpx;
   padding: 0 10rpx;

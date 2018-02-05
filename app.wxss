@@ -2,7 +2,7 @@
 @import "dist/index.wxss";
 
 page {
-  background-color: #F8F8F8;
+  /* background-color: #F8F8F8; */
   height: 100%;
   font-size: 26rpx;
   line-height: 1.6;
@@ -103,8 +103,9 @@ view{
   border: none;
 }
 .tag-btn-content .get-tag {
-  width: 432rpx;
-  height: 206rpx;
+  width: 509rpx;
+  height: 91rpx;
+  opacity: 1;
 }
 
 .tag-btn-content .get-tag image {

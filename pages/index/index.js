@@ -24,7 +24,7 @@ Page({
   },
   // testtap:function(){
   //   wx.navigateTo({
-  //     url: '/pages/order/sendUrl/sendUrl?order_number=2018020523783'
+  //     url: '/pages/gift/chooseAddress/chooseAddress?order_id=30&code=1',
   //   })
   // },
   //事件处理函数

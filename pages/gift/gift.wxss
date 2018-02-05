@@ -27,7 +27,7 @@
 
 
 .tag-btn-content {
-  padding: 0 60rpx 0;
+  padding: 90rpx 60rpx 0;
 }
 
 .gift-notice{

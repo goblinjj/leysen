@@ -5,24 +5,23 @@
   <view class='register-info'>
     <form bindsubmit="formSubmit">
       <view class='register-item flex a-c'>
-        <view class='label'>姓名：</view>
+        <view class='label'>姓<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>名：</view>
         <view class='register-input'>
           <input name='name' placeholder="请输入姓名" />
         </view>
       </view>
       <view class='register-item flex a-c'>
-        <view class='label'>手机号：</view>
+        <view class='label'>手<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>机<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>号：</view>
         <view class='register-input'>
           <input name='phone' bindinput="bindMobileChange" placeholder="请输入手机号" />
         </view>
       </view>
       <view class='register-item flex a-c'>
-        <view class='label'>验证码：</view>
         <view class='register-input phone-code-info'>
-          <input name='phonecode' placeholder="请输入验证码" />
+          <input name='phonecode' placeholder="请输入验证码" style='width:360rpx;margin-left:80rpx;'/>
         </view>
         <view class='code-content'>
-          <view class='code-info'>
+          <view class='code-info' >
             <block wx:if="{{captcha_status==='isSended'}}">
               <button class='get-code-btn time-code-btn' data-num="code">{{wxTimerSecond}} s</button>
             </block>
@@ -36,10 +35,11 @@
             </block>
           </view>
         </view>
+        
       </view>
       <view class='comfirm-content'>
         <button class='comfirm-btn' formType="submit">
-          <image mode='aspectFit' src='/image/confirm.jpg'></image>
+          <image mode='aspectFit' src='/image/sure.png'></image>
         </button>
       </view>
     </form>

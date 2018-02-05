@@ -1,4 +1,4 @@
-<image class='bg-img' src='../../../image/bg.png'></image>
+<image class='bg-img' src='../../../image/bg.jpg'></image>
 <view class="tag-content">
   <view class='tag-box flex j-c a-c'>
     <view class='tag-inbox'>
@@ -13,21 +13,21 @@
             <!-- sinup -->
             <view class='register-info'>
               <view class='register-item flex a-c'>
-                <view class='label'>姓名：</view>
+                <view class='label'>姓<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>名：</view>
                 <view class='register-input'>
                   <input name='name' placeholder="请输入姓名" />
                 </view>
               </view>
               <view class='register-item flex a-c'>
-                <view class='label'>手机号：</view>
+                <view class='label'>手<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>机<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>号：</view>
                 <view class='register-input'>
                   <input name='phone' bindinput="bindMobileChange" placeholder="请输入手机号" />
                 </view>
               </view>
               <view class='register-item flex a-c'>
-                <view class='label'>验证码：</view>
+                <!-- <view class='label'>验证码：</view> -->
                 <view class='register-input phone-code-info'>
-                  <input name='phonecode' placeholder="请输入验证码" />
+                  <input name='phonecode' placeholder="请输入验证码"  style='width:330rpx;margin-left:65rpx;'/>
                 </view>
                 <view class='code-content'>
                   <view class='code-info'>
@@ -51,7 +51,7 @@
         </view>
         <view class='tag-btn-content'>
           <button class='get-tag' formType="submit">
-            <image mode="scaleToFill" src='/image/sendUp.png'></image>
+            <image mode="scaleToFill" src='/image/sure.png'></image>
           </button>
         </view>
       </form>
