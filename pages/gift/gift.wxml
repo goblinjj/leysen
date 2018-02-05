@@ -1,5 +1,4 @@
-<!--pages/tagIntroduction/tagIntroduction.wxml-->
-<image class='bg-img' src='../../../image/bg.jpg'></image>
+
 <view class="tag-content">
   <view class='tag-box flex j-c a-c'>
     <view class='tag-inbox'>
@@ -24,3 +23,4 @@
   </view>
 
 </view>
+<image class='bg-img' src='../../image/bg.jpg'></image>

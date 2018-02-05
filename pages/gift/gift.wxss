@@ -4,7 +4,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
 }
 
 .tag-content{
@@ -13,10 +13,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
-}
-.tag-inbox {
-  width: 600rpx;
+  z-index: 2;
 }
 
 .tag-box .tag-img {
@@ -59,7 +56,4 @@
 }
 .gift-stadus{
   color: #1d2088;
-}
-.getBox{
-
 }
