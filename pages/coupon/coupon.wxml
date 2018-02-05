@@ -1,0 +1,35 @@
+<import src="../../dist/quantity/index.wxml" />
+<view class='coupon-content' wx:if="{{showCard}}">
+  <view class='coupon-list'>
+  <!-- for -->
+    <view class='coupon-item' wx:for="{{cardList}}" wx:key="id" data-id="{{item.id}}" data-index="{{index}}" bindtap='choosedAction' >
+      <view class="coupon-card {{choosed == index? 'active' : ''}}"   >
+        <view class='coupon-image rel'>
+          <image src='{{item.pic_url}}'></image>
+          <view class="choose-num font32" wx-if="{{choosed == index}}">{{item.mynum}}</view>
+        </view>
+      </view>
+      <view class='coupon-tit flex j-s'>
+        <text class='font28 elis name'>{{item.title}}</text>
+        <span class='price'>￥{{item.price}}</span>
+      </view>
+      <view class='coupon-num flex j-s'>
+        <text></text>
+        <view class='choose-box'>
+          <template is="zan-quantity" data="{{obj:1314, min:1,max:999,quantity:item.mynum, componentId:index, size: 'small' }}" />
+        </view>
+      </view>
+    </view>
+    <!-- for   end -->
+  </view>
+<!-- foot -->
+<view class='buy-foot flex j-s a-c'>
+  <view class='left-buy-foot'>
+    <view class='num font24'>x{{cardList[choosed].mynum || 0}}</view>
+    <view class='price'>¥{{cardList[choosed].mynum * cardList[choosed].price || 0}}</view>
+  </view>
+  <view class='right-buy-foot'>
+    <button catchtap='setOrder'>购买</button>
+  </view>
+</view>
+</view>

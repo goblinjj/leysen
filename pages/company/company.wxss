@@ -1,0 +1,34 @@
+/* pages/company/company.wxss */
+.main{
+
+width: 100%;
+background: #fff;
+}
+image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.pd-15{
+  padding: 15rpx;
+}
+.title-l{
+  display: block;
+  margin:30rpx 0;
+}
+.title{
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+
+}
+.company-bd{
+   display: inline-block;
+  width: 80%;
+  vertical-align: top;
+  color: #999;
+
+}
+.mgt-35{
+  margin-bottom: 35rpx;
+}

@@ -1,0 +1,65 @@
+<!orderList.wxml-->
+<import src="../../../dist/tab/index.wxml" />
+<!-- 头部tab栏 -->
+
+<view class='order-list'>
+  <view class="head_tab">
+    <template is="zan-tab" data="{{tab: tab1, componentId: 'tab1'}}"></template>
+  </view>
+  <view class='order-content'>
+    <view class='order-ul'>
+      <!-- for -->
+      <view class='order-item' wx:for="{{orderList}}" wx:key="id">
+        <view class='order-detail flex'>
+          <view class='left-info'>
+            <image mode='aspectFit' src='{{item.gift_url}}'></image>
+          </view>
+          <view class='right-info'>
+            <view class='tit flex j-s'>
+              <text class='name elis'>{{item.category_name}}</text>
+              <text class='price'>¥{{item.price}}</text>
+            </view>
+            <view class='num'>x{{item.number}}</view>
+            <view class='subInfo'>订单编号:{{item.order_number}}</view>
+            <view class='subInfo'>交易时间:{{item.created_at}}</view>
+          </view>
+        </view>
+        <view class='order-btn flex j-e a-c'>
+          <block wx:if="{{item.status == 1}}">
+            <!-- 未付款 -->
+            <button class='btn-default order-btn-status' data-index='{{index}}' catchtap='goOrder'>付款</button>
+          </block>
+          <block wx:if="{{item.status == 2}}">
+            <!-- 已付款 -->
+            <button wx:if="{{item.price>0}}" catchtap='backPay' data-num='{{item.order_number}}' class='btn-default order-btn-status'>退款</button>
+            <button wx:if="{{item.price>0}}" class='btn-default order-btn-status' data-name="{{item.category_name}}" data-pic="{{item.gift_url}}" data-num='{{item.order_number}}' catchtap='sendOther'>赠送</button>
+            <button catchtap='toUse' data-num='{{item.order_number}}' class='btn-default order-btn-status'>使用</button>
+          </block>
+          <block wx:if="{{item.status == 3}}">
+            <!-- 已领取 -->
+            <button class='btn-default order-btn-status'>已使用</button>
+          </block>
+          <block wx:if="{{item.status == 4}}">
+            <!-- 已转赠 -->
+            <text class="used">已转赠</text>
+          </block>
+          <block wx:if="{{item.status == 5}}">
+            <!-- 被转赠 -->
+            <button catchtap='toUse' data-num='{{item.order_number}}' class='btn-default order-btn-status'>使用</button>
+          </block>
+          <block wx:if="{{item.status == 6}}">
+            <!-- 转赠中 -->
+            <button class='btn-default order-btn-status'>转赠中</button>
+          </block>
+          <!-- <button catchtap='toUse' data-num='{{item.order_number}}' class='btn-default order-btn-status'>使用</button> -->
+        </view>
+      </view>
+      <!-- for   end -->
+    </view>
+  </view>
+  <!-- 去使用 -->
+  <view catchtap='closeCode' class="use-content flex j-c a-c" wx:if="{{toUse}}">
+   <image src='{{codeImg}}'></image>
+  </view>
+  <!-- 去使用    end-->
+</view>

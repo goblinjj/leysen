@@ -1,0 +1,19 @@
+<!--pages/company/company.wxml-->
+<view class='main pdt-35'>
+<image src='https://leysen.zoomdoit.com/static/admin/hongtan/kv.png'  mode="widthFix"></image>
+<view class='pd-15'>
+<text class='font32 title-l'>公司简介</text>
+<view class='mgt-35'>
+<text class='title font27'>发展史：</text>
+<text class='company-bd font27'>颠覆性互联时代高性价比的钻石，钻戒定制平台。让消费者只需实惠的价格，就能买到上乘的钻石！定制您的专属钻戒！</text>
+</view>
+<view>
+<text class='title font27'>发展史：</text>
+<text class='company-bd font27'>颠覆性互联时代高性价比的钻石，钻戒定制平台。让消费者只需实惠的价格，就能买到上乘的钻石！定制您的专属钻戒！</text>
+</view>
+
+
+</view>
+
+
+</view>

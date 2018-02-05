@@ -1,0 +1,97 @@
+page {
+  background-color: #fff;
+}
+.register-info-content{
+  padding-bottom: 50rpx;
+}
+.full-banner image{
+  display: block;
+  width: 100%;
+}
+.register-info{
+  margin-top: 40rpx;
+}
+.register-info .register-item{
+  padding: 15rpx 0rpx;
+}
+.register-info .register-item .label{
+  text-align: right;
+  font-size: 30rpx;
+  width: 230rpx;
+  overflow: hidden;
+  color: #666;
+  padding-right: 30rpx;
+}
+.register-info .register-item .register-input  input{
+  width: 450rpx;
+  overflow: hidden;
+  border-radius: 7rpx;
+  border: 1rpx solid #bfbfbf;
+  height: 70rpx;
+  padding-left: 20rpx;
+}
+.register-info .register-item .register-input.register-code input{
+  width: 215rpx;
+}
+.code-content {
+  width: 215rpx;
+  overflow: hidden;
+  margin-left: 32rpx;
+}
+
+.change-code{
+  font-size: 22rpx;
+  color: #999;
+  line-height: 50rpx;
+  text-align: right;
+  padding-right: 60rpx;
+}
+.code-content .code-info{
+  width: 215rpx;
+  height: 70rpx;
+   overflow: hidden; 
+}
+.code-content .code-info  image{
+   width: 100%;
+   height: 100%;
+   display: block;
+}
+.get-code-btn{
+  font-size: 32rpx;
+  text-align: center;
+  border: none;
+  color: #fff;
+  background: #e3921e;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding: 0 10rpx;
+}
+.get-code-btn.time-code-btn{
+  background: #ccc;
+}
+.register-info .register-item .register-input.phone-code-info{
+  /* padding-left: 0rpx; */
+}
+.register-info .register-item .register-input.phone-code-info input{
+  width: 204rpx;
+}
+
+.comfirm-content{
+  margin-top: 50rpx;
+}
+.comfirm-content .comfirm-btn {
+  width: 450rpx;
+  height: 125rpx;
+  background: #fff;
+  padding: 0;
+}
+.comfirm-content .comfirm-btn::after{
+  border: none;
+}
+.comfirm-content .comfirm-btn image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+

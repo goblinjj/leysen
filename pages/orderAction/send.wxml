@@ -1,0 +1,42 @@
+<!--赠送订单-->
+<view class='main'>
+
+  <view class='img-box'>
+    <image src='{{pic}}' mode="widthFix" class='img-send'></image>
+    <label class='font-999 font24'>{{name}}</label>
+  </view>
+  <view class='send-info'>
+    <form bindsubmit="formSubmit">
+      <text class='font-999  font24'>我想对你说</text>
+      <view class="change-action flex j-c">
+        <view class='in-change-action flex'>
+          <view catchtap='changeType' class="change-btn {{sendType=='write'?'active':''}}" data-send='write'>文字留言</view>
+          <view catchtap='changeType' class="change-btn change-btn02 {{sendType=='noice'?'active':''}}" data-send='noice'>语音留言</view>
+        </view>
+      </view>
+      <view class='out-detail'>
+        <block wx:if="{{sendType == 'write'}}">
+          <textarea bindinput="textInfo" name="wish_text" class='write-info' placeholder='这里写留言...'></textarea>
+        </block>
+        <!--  录音按钮 -->
+        <block wx:else>
+         <view wx:if="{{isRecode}}" class='begain-voice flex a-c j-c' catchtap='stopRecode'>
+         <text class='iconfont icon-jiedianjieshu'></text>
+         结束录音
+         </view>
+         <view wx:else class='begain-voice flex a-c j-c' catchtap='startRecode'>
+          <text class='iconfont icon-luyin'></text>
+          上传语音
+         </view>
+        </block>
+        <!-- 播放录音 -->
+        <!-- <view class=""></view> -->
+      </view>
+ <!-- <button class='btn-blue' open-type="share" formType="submit"> 赠送给好友</button> -->
+      <button class='btn-blue' open-type="share" > 赠送给好友</button>
+    </form>
+
+
+  </view>
+
+</view>

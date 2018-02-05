@@ -1,0 +1,43 @@
+
+
+
+.tag-inbox {
+  width: 600rpx;
+}
+
+.tag-box .tag-img {
+  width: 600rpx;
+  margin-bottom: 30rpx;
+  position: relative;
+}
+
+.tag-box .tag-img image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+.tag-btn-content {
+  padding: 90rpx 60rpx 0;
+}
+
+.gift-notice{
+  color: #fff;
+  position: absolute;
+  top: 40rpx;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+.gift-notice .tit{
+  margin: 0 20rpx;
+  font-size: 34rpx;
+  line-height: 80rpx;
+}
+.line{
+  display: block;
+  width: 40rpx;
+  height: 2rpx;
+  background: #fff;
+}

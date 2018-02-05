@@ -1,0 +1,107 @@
+<import src="../../dist/quantity/index.wxml" />
+<import src="../../utils/wxParse.wxml" />
+<view class='gift-content' wx:if='{{showCard}}'>
+  <!-- 单张图 -->
+   <view wx:if="{{cardList.length == 1}}" class="gift-box gift-box-single ">
+      <view class="gift-box-item scroll-view-item_H" bindtap='chooseCard' data-card="{{cardList[0].id}}">
+        <view class='gift-img active'>
+          <image mode="aspectFit" src='{{cardList[0].pic_url}}'></image>
+        </view>
+        <!-- <view class='gift-tit font27 elis'>
+          <text>我的爱</text>
+        </view> -->
+      </view>
+  </view> 
+  <!-- 单张图   end -->
+  <!-- 多张图 -->
+  <view class="gift-box" wx:else>
+    <!-- gift-box-single -->
+    <scroll-view class=" scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+      <view class="gift-box-item scroll-view-item_H demo-text-9"></view>
+      <view wx:for="{{cardList}}" bindtap='chooseCard' data-index="{{index}}" wx:key="id" data-card="{{item.id}}" class="gift-box-item scroll-view-item_H">
+        <view class="gift-img {{myindex == index?'active':''}}">
+          <image mode="aspectFit" src='{{item.pic_url}}'></image>
+        </view>
+        <view class='gift-tit font27 elis'>
+          <text >{{item.title}}</text>
+        </view>
+      </view>
+      <view class="gift-box-item scroll-view-item_H demo-text-9"></view>
+    </scroll-view>
+  </view>
+  <!-- 多张图    end-->
+  <!-- 卡片选择   end -->
+  <!-- 选择礼品 -->
+  <view class='gift-choose'>
+    <view class='gift-subtit'>选择礼品</view>
+    <view class='coupon-list'>
+      <!-- for -->
+      <view class='coupon-item flex'>
+        <view class="coupon-card  {{!num == 0? 'active' : ''}}">
+          <view class='coupon-image rel'>
+            <image src='{{cardList[myindex].gift_url}}'></image>
+            <view class="choose-num font32" wx-if="{{!num == 0}}">{{num}}</view>
+          </view>
+        </view>
+        <view class='right-gift'>
+          <view class='coupon-tit flex j-s'>
+            <text class='font28 elis name'>{{cardList[myindex].title}}</text>
+            <span class='price'>￥{{cardList[myindex].price}}</span>
+          </view>
+          <view class='coupon-num flex j-s a-c'>
+          </view>
+          <view class='coupon-num flex j-s a-c'>
+            <text class='num'></text>
+            <view clss='choose-box'>
+              <template is="zan-quantity" data="{{obj:1314, min:1,max:999,quantity:num, componentId:001, size: 'small' }}" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- for   end -->
+
+    </view>
+  </view>
+  <!-- 选择-->
+  <view class='choose-store'>
+    <view class='choose-item flex'>
+      <view class='label'>试用门店:</view>
+      <view class='right-choose'>
+        <navigator url="/pages/store/storeList?store={{cardList[myindex].id}}" hover-class="none">查看全部试用门店</navigator>
+      </view>
+    </view>
+  </view>
+
+  <view class="choose-ul">
+    <view class='choose-item flex'>
+      <view class='label'>可用时段:</view>
+      <view class='right-choose'>
+        全天
+      </view>
+    </view>
+    <view class='choose-item flex'>
+      <view class='label'>客服电话:</view>
+      <view class='right-choose'>56548848357353</view>
+    </view>
+    <view class='choose-item no-border flex'>
+      <view class='label'>产品详情:</view>
+      <view class='right-choose'>
+        <view class="in-right-choose">
+          <template is="wxParse" data="{{wxParseData:html_nodes.nodes}}" />
+        </view>
+        <!-- {{cardList[myindex].desc}} -->
+      </view>
+    </view>
+  </view>
+  <!-- 选择   end -->
+  <!-- foot -->
+  <view class='buy-foot flex j-s a-c'>
+    <view class='left-buy-foot'>
+      <view class='num font24'>x {{num}}</view>
+      <view class='price'>￥{{num*cardList[myindex].price}}</view>
+    </view>
+    <view class='right-buy-foot'>
+      <button bindtap='setOrder'>购买</button>
+    </view>
+  </view>
+</view>

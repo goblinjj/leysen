@@ -1,0 +1,29 @@
+<view class="send-url">
+  <view class='send-detail'>
+    <view class='send-img'>
+      <image mode='aspectFit' src='{{giftInfo.gift_url}}'></image>
+    </view>
+    <view class='info'>收到卡片，已放到卡包</view>
+    <view class='send-tit font32'>王室甄选礼品卡——{{giftInfo.title}}</view>
+    <view class='price'>{{giftInfo.price}}</view>
+  </view>
+  <view class="send-user flex a-c">
+    <view class='left-img'>
+      <image mode='scaleToFill' src="{{giftInfo.head_url}}"></image>
+    </view>
+    <view class='right-info'>
+      <view class='name'>{{giftInfo.nickname}}</view>
+      <view wx:if="{{giftInfo.wish_text}}" class="subInfo elis">{{giftInfo.wish_text}}</view>
+      <view wx:if="{{giftInfo.wish_audio}}" class="subInfo elis">
+        <text wx:if="{{canPlay}}" bindtap="audioPlay" class="iconfont icon-bofang luyin"></text>
+        <text wx:else class="iconfont icon-bofangzanting luyin" bindtap="audioPause"></text>
+      </view>
+    </view>
+
+  </view>
+
+  <audio src="{{giftInfo.wish_audio}}" id="myAudio"></audio>
+  <view class='send-too'>
+    <navigator hover-class="none" url="/pages/index/index">我也要送</navigator>
+  </view>
+</view>

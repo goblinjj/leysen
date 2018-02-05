@@ -1,0 +1,84 @@
+.coupon-content{
+  padding-bottom: 140rpx;
+}
+.coupon-list{
+}
+.coupon-list .coupon-item{
+  background: #fff;
+  margin-bottom: 10rpx;
+  padding: 0rpx 40rpx 20rpx;
+}
+.coupon-list .coupon-item .coupon-card{
+  border-bottom: 1rpx solid #e5e5e5;
+  padding: 20rpx;
+  position: relative;
+  text-align: center;
+}
+.coupon-list .coupon-item .coupon-card .coupon-image{
+  display: inline-block;
+}
+.coupon-list .coupon-item .coupon-card.active image{
+  border-color: #ffb400
+}
+.coupon-list .coupon-item .coupon-card image{
+  width: 590rpx;
+  height: 330rpx;
+  display: block;
+  border: 4rpx solid transparent;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.choose-num{
+  position: absolute;
+  right: -15rpx;
+  top: -15rpx;
+  background: #ffb400;
+  color: #fff;
+  width: 46rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  font-weight: bold;
+}
+.coupon-num .num{
+  color: #999;
+}
+.coupon-tit{
+  line-height: 60rpx;
+}
+.coupon-tit .name{
+  max-width: 460rpx;
+}
+.buy-foot{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top: 1rpx solid #e5e5e5;
+  background: #fff;
+  height: 110rpx;
+  width: 100%;
+  padding: 0 40rpx;
+  z-index: 5;
+}
+.buy-foot .left-buy-foot .num{
+  color: #999;
+  line-height: 28rpx;
+}
+.buy-foot .left-buy-foot .price{
+  font-size: 32rpx;
+  line-height: 40rpx;
+}
+.buy-foot .right-buy-foot button{
+  width: 170rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 32rpx;
+  border-radius: 6rpx;
+  background: #2a41a8;
+  display: block;
+  border: 0;
+}

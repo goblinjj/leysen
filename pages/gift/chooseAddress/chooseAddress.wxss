@@ -1,0 +1,120 @@
+.tag-content {
+  background-color: pink;
+}
+
+.tag-box {
+  background: none;
+}
+
+.tag-box .ingift-register {
+  background: rgba(0, 0, 0, 0.4);
+  width: 670rpx;
+  height: 610rpx;
+  padding: 20rpx;
+}
+
+.gift-name .tit {
+  margin: 0 20rpx;
+  font-size: 34rpx;
+  line-height: 80rpx;
+  color: #fff;
+}
+
+.line {
+  display: block;
+  width: 40rpx;
+  height: 2rpx;
+  background: #fff;
+}
+
+.register-info {
+  margin-top: 60rpx;
+}
+
+.register-info .register-item {
+  padding: 16rpx 0rpx;
+}
+
+.register-info .register-item .label {
+  text-align: right;
+  font-size: 30rpx;
+  width: 190rpx;
+  overflow: hidden;
+  color: #fff;
+  padding-right: 20rpx;
+}
+
+.register-select {
+  width: 400rpx;
+  overflow: hidden;
+  border-radius: 7rpx;
+  border: 1rpx solid #bfbfbf;
+  height: 70rpx;
+  padding-left: 20rpx;
+  background: #fff;
+}
+
+.register-info .register-item .register-input.register-code input {
+  width: 180rpx;
+}
+
+.code-content {
+  width: 180rpx;
+  overflow: hidden;
+  margin-left: 40rpx;
+}
+
+.change-code {
+  font-size: 22rpx;
+  color: #fff;
+  line-height: 30rpx;
+  text-align: right;
+  padding-right: 15rpx;
+}
+
+.code-content .code-info {
+  width: 180rpx;
+  height: 70rpx;
+  overflow: hidden;
+  background: #fff;
+}
+
+.code-content .code-info.phone-code-info {
+  background: none;
+}
+
+.code-content .code-info  image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.get-code-btn {
+  font-size: 32rpx;
+  text-align: center;
+  border: none;
+  color: #fff;
+  background: #e3921e;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.register-info .register-item .register-input.phone-code-info {
+  padding-left: 18rpx;
+}
+
+.register-info .register-item .register-input.phone-code-info input {
+  width: 357rpx;
+}
+
+.tag-btn-content {
+  margin-top: 100rpx;
+}
+
+.gift-stadus {
+  color: #fff;
+  text-align: center;
+}
+.need-choose{
+  color: #999;
+}

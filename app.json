@@ -1,0 +1,37 @@
+{
+
+  "pages": [
+    "pages/index/index",
+    
+    "pages/order/sendUrl/sendUrl",
+    
+    "pages/orderAction/send",
+    "pages/gift/register/register",
+    "pages/video/video",
+    "pages/login/register/register",
+    "pages/store/storeList",
+    "pages/chooseCard/chooseCard",
+    "pages/gift/chooseAddress/chooseAddress",
+    "pages/gift/giftKind/giftKind",
+    "pages/gift/giftStatus/giftStatus",
+    "pages/gift/gift",
+    "pages/order/orderList/orderList",
+    "pages/company/company",
+    "pages/coupon/coupon",
+    "pages/logs/logs"
+  ],
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#f8f8f8"
+  }
+}

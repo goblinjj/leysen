@@ -1,0 +1,18 @@
+<view class='store-list' v-if="showIndex">
+  <view class='store-tit'>
+    <image mode='scaleToFill' src='/image/storeList_03.png'></image>
+  </view>
+  <view class='store-num'>仅显示离你最近的30家门店</view>
+  <view class='store-list'>
+    <view class='store-item flex j-s a-c' wx:for="{{storeList}}" wx:key="id">
+      <view class='left-info'>
+        <view class='name elis'>{{item.name}}</view>
+        <view class='address elis'>{{item.address}}</view>
+      </view>
+      <view class='right-info'>
+        <image class='local-icon' src='/image/storeList_07.png'></image>
+        <view class='distance'>{{item.distance}}</view>
+      </view>
+    </view>
+  </view>
+</view>

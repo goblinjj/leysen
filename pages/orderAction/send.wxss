@@ -1,0 +1,73 @@
+/* pages/orderAction/send.wxss */
+page{
+  background: #fff;
+}
+.main{
+  background: #fff;
+  overflow: hidden;
+  padding-bottom: 50rpx;
+}
+.img-box{
+border-bottom: 1px solid #eee;
+width: 90%;
+margin: 0 auto 30rpx;
+  text-align: center;
+}
+.send-info{
+  padding: 0 30rpx;
+}
+.img-send{
+  display: block;
+  width: 230rpx;
+  height: 230rpx;
+  margin: 30rpx auto 10rpx;
+}
+.btn-blue{
+  display: block;
+width:80%;
+margin-top: 50rpx;
+}
+.change-action .in-change-action { 
+  width: 310rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  
+
+}
+.change-btn{
+  width: 50%;
+  text-align: center;
+  border-radius: 5rpx 0 0 5rpx;
+  border: 1rpx solid #e5e5e5;
+  
+}
+.change-btn02{
+  border-radius:0 5rpx 5rpx 0;
+}
+.change-btn.active{
+  background: #2a41a8;
+  color: #fff;
+  border-color: #2a41a8;
+}
+.out-detail{
+  height: 360rpx;
+}
+.write-info{
+  border: 1rpx solid #e5e5e5;
+  padding: 20rpx;
+  margin: 30rpx 0;
+  display: block;
+  width: 648rpx;
+  height: 300rpx;
+  overflow-y: scroll;
+}
+.begain-voice{
+  width: 240rpx;
+  height: 60rpx;
+  line-height:60rpx;
+  margin: 30rpx auto 20rpx;
+  border-radius: 5rpx;
+  border: 1rpx solid #2a41a8;
+  background: #fff;
+  color: #2a41a8;
+}

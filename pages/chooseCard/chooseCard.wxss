@@ -1,0 +1,201 @@
+.gift-content{
+  padding-bottom: 100rpx;
+}
+.gift-box{
+  background: #fff;
+  padding: 20rpx 0;
+}
+/* 单张图 */
+.gift-box.gift-box-single .gift-box-item{
+  width: 100%;
+  /* height: 300rpx; */
+}
+.gift-box.gift-box-single .gift-box-item .gift-img {
+  margin: 0 auto;
+}
+
+/* 多张图 */
+.scroll-view_H{
+  white-space: nowrap;
+}
+
+.gift-box-item{
+  display: inline-block;
+  width: 460rpx;
+  height: 370rpx;
+  margin: 0 10rpx;
+}
+.gift-box-item .gift-img {
+  width: 460rpx;
+  height: 300rpx;
+   border: 2rpx solid transparent;
+   border-radius: 8rpx;
+   overflow: hidden;
+}
+.gift-box-item .gift-img.active {
+  border-color: #2a41a8;
+}
+.gift-box-item .gift-img image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.gift-tit{
+  line-height: 70rpx;
+  text-align: center;
+}
+.gift-tit text{
+  display: inline-block;
+  line-height: 64rpx;
+  border-bottom: 4rpx solid transparent;
+  color: #666;
+  /* height: 70rpx; */
+}
+.gift-tit text.active{
+  border-color: #2a41a8;
+}
+.demo-text-9{
+  width: 60rpx;
+}
+
+
+/* 选择礼品 */
+.gift-choose{
+  padding: 10rpx 20rpx 0;
+  background: #fff;
+}
+.gift-choose .gift-subtit{
+  line-height: 90rpx;
+  font-size: 32rpx;
+  color: #666;
+}
+
+
+
+.choose-num{
+  position: absolute;
+  right: -15rpx;
+  top: -15rpx;
+  background: #2a41a8;
+  color: #fff;
+  width: 46rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.coupon-num{
+  min-height: 63rpx;
+}
+.coupon-num .num{
+  color: #999;
+}
+.coupon-tit{
+  line-height: 60rpx;
+}
+.coupon-tit .name{
+  max-width: 460rpx;
+}
+.coupon-list .right-gift{
+  width: 500rpx;
+}
+.coupon-list .coupon-item{
+  padding: 30rpx 10px;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.coupon-list .coupon-item .coupon-card image{
+  width: 170rpx;
+  height: 170rpx;
+  display: block;
+  border: 2rpx solid transparent;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.coupon-list .coupon-item .coupon-card.active image{
+  border-color: #2a41a8;
+}
+.coupon-list .coupon-item .right-gift{
+  padding-left: 40rpx;
+}
+.buy-foot{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top: 1rpx solid #e5e5e5;
+  background: #fff;
+  height: 110rpx;
+  width: 100%;
+  padding: 0 40rpx;
+  z-index: 5;
+}
+.buy-foot .left-buy-foot .num{
+  color: #999;
+  line-height: 28rpx;
+}
+.buy-foot .left-buy-foot .price{
+  font-size: 32rpx;
+  line-height: 40rpx;
+}
+.buy-foot .right-buy-foot button{
+  width: 170rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 32rpx;
+  border-radius: 6rpx;
+  background: #2a41a8;
+  display: block;
+  border: 0;
+}
+/* 选择 */
+.choose-store{
+  padding: 0 20rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+}
+.choose-store .choose-item{
+  line-height: 40rpx;
+  border-bottom: none;
+}
+.choose-store .choose-item .right-choose{
+  color: #2a41a8;
+  line-height: 40rpx;
+}
+.choose-ul{
+  background: #fff;
+  padding: 0rpx 20rpx 40rpx;
+}
+.choose-item{
+  line-height: 40rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #e5e5e5;
+  color: #666;
+  font-size: 28rpx;
+}
+.choose-item.no-border{
+  border-bottom: 0;
+}
+.choose-item .label{
+  width: 170rpx;
+  flex-shrink: 0;
+  overflow: hidden
+}
+.choose-item .right-choose{
+  color: #999;
+  line-height: 40rpx;
+}
+.in-right-choose{
+  padding-right: 20rpx;
+  width: 555rpx;
+}
+.gift-content{
+  width: 750rpx;
+  overflow: hidden;
+}

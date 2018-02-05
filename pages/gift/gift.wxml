@@ -1,0 +1,24 @@
+<!--pages/tagIntroduction/tagIntroduction.wxml-->
+<view class="tag-content">
+  <view class='tag-box flex j-c a-c'>
+    <view class='tag-inbox'>
+      <view class='tag-img'>
+        <image src='/image/giftBox.png' mode='widthFix'></image>
+        <view class='gift-notice'>
+          <view class='gift-name flex j-c a-c'>
+            <text class='line'></text>
+            <text class='tit'>恭喜您获得王室礼</text>
+            <text class='line'></text>
+          </view>
+          <view class='gift-stadus'>开启宝盒即可领取</view>
+        </view>
+      </view>
+      <view class='tag-btn-content'>
+        <button class='get-tag' catchtap='openbox'>
+          <image mode="scaleToFill" src='/image/getBox.png'></image>
+        </button>
+      </view>
+    </view>
+  </view>
+
+</view>

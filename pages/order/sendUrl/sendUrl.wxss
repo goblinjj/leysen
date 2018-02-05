@@ -1,0 +1,75 @@
+.send-url{
+  background: #fff;
+  padding: 0 15rpx;
+}
+.send-detail{
+  text-align: center;
+  padding: 20rpx 0 40rpx;
+  line-height: 60rpx;
+  color: #666;
+}
+.send-detail .send-img{
+  height: 350rpx;
+  width: 100%;
+}
+.send-detail .send-img image{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.send-detail .info{
+  color: #999;
+}
+.send-detail .price{
+  font-size: 30rpx;
+}
+.send-user{
+  border-top: 1rpx solid #e5e5e5;
+  padding: 30rpx 15rpx;
+}
+.send-user .left-img{
+  width: 90rpx;
+  height: 90rpx;
+  flex-shrink: 0;
+}
+.send-user .left-img image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.send-user .left-info{
+  line-height: 42rpx;
+}
+.send-user .right-info{
+  padding-left: 20rpx;
+}
+.send-user .name{
+  font-size: 30rpx;
+  color: #666;
+}
+.send-user .subInfo{
+  color: #999;
+  font-size: 24rpx;
+  height: 42rpx;
+  width: 560rpx;
+}
+.send-too{
+  position: fixed;
+  bottom: 20rpx;
+  left: 0;
+  width: 100%;
+  line-height: 60rpx;
+  text-align: center;
+  color: #666;
+  font-size: 28rpx;
+}
+.luyin{
+  display: block;
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  border: 1rpx solid #999;
+  color: #999;
+  line-height: 36rpx;
+  text-align: center;
+}

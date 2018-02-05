@@ -1,0 +1,59 @@
+<!-- <import src="../../utils/wxparse/wxParse.wxml" /> -->
+<view class="tag-content">
+  <view class='tag-box flex j-c a-c'>
+    <view class='tag-inbox'>
+      <form bindsubmit="formSubmit">
+        <view class='ingift-register'>
+          <view class='register-box'>
+            <view class='gift-name flex j-c a-c'>
+              <text class='line'></text>
+              <text class='tit'>恭喜您注册成功</text>
+              <text class='line'></text>
+            </view>
+            <view class='gift-stadus'>开启宝盒即可领取</view>
+            <!-- sinup -->
+            <view class='register-info'>
+              <view class='register-item flex a-c'>
+                <view class='label'>省份：</view>
+                <view class='register-select flex a-c'>
+                  <picker bindchange="ecoChange" value="{{economize}}" range="{{ecoArry}}" range-key="province">
+                    <view class="picker">
+                      <text class='need-choose' wx:if="{{!economize}}">请选择省份</text>{{ecoArry[economize].province}}
+                    </view> 
+                  </picker>
+                </view>
+              </view>
+              <view class='register-item flex a-c'>
+                <view class='label'>城市：</view>
+                <view class='register-select flex a-c'>
+                  <picker bindchange="cityChange" value="{{mycity}}" range="{{cityArry}}" range-key="city">
+                    <view class="picker">
+                      <text class='need-choose' wx:if="{{!mycity}}">请选择城市</text>{{cityArry[mycity].city}}
+                    </view>
+                  </picker>
+                </view>
+              </view>
+              <view class='register-item flex a-c'>
+                <view class='label'>门店：</view>
+                <view class='register-select flex a-c'>
+                  <picker bindchange="storeChange" value="{{store}}" range="{{storeArry}}" range-key="name">
+                    <view class="picker">
+                      <text class='need-choose' wx:if="{{!store}}">请选择门店</text>{{storeArry[store].name}}
+                    </view>
+                  </picker>
+                </view>
+              </view>
+            </view>
+            <!-- sinup end-->
+          </view>
+        </view>
+        <view class='tag-btn-content'>
+          <button class='get-tag' catchtap='chooseSubmit'>
+            <image mode="scaleToFill" src='/image/gitNow.png'></image>
+          </button>
+        </view>
+      </form>
+      <!-- box   end -->
+    </view>
+  </view>
+</view>

@@ -1,0 +1,157 @@
+/**index.wxss**/
+.index{
+  padding-bottom: 160rpx;
+}
+.banner-index{
+  height: 470rpx;
+}
+.banner-index image{
+  display: block;
+  width: 100%;
+  height: 470rpx;
+}
+.fast-entry{
+  background: #fff;
+  margin-bottom: 10rpx;
+  padding: 40rpx 0 20rpx;
+}
+.tit{
+  line-height: 50rpx;
+  margin-bottom: 10rpx;
+  padding: 0 20rpx;
+  font-size: 34rpx;
+}
+.fast-list{
+  flex-wrap:wrap;
+}
+.fast-list .fast-item{
+  width: 50%;
+  padding: 10rpx 20rpx;
+}
+/* .fast-list .fast-item .fast-link{
+  display: block;
+  width: 100%;
+} */
+.fast-list .fast-item .fast-tit{
+  line-height: 60rpx;
+  padding: 0 20rpx;
+}
+.fast-list .fast-item .fast-img{
+  width: 340rpx;
+  height: 260rpx;
+}
+.fast-list .fast-item .fast-img image{
+  display: block;
+  width:100%;
+  height: 100%;
+}
+.fast-list .fast-tit{
+  font-size: 27rpx;
+}
+.video-content{
+  background: #fff;
+  border-bottom: 10rpx;
+  padding: 20rpx 0;
+}
+.video-list{
+  padding: 10rpx 20rpx;
+}
+.video-item{
+  width: 345rpx;
+  height: 200rpx;
+  /* border-radius: 8rpx; */
+  overflow: hidden;
+}
+.video-item video{
+  width: 345rpx;
+  height: 200rpx;
+}
+
+.imgCover{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.foot-link{
+  width: 750rpx;
+  font-size: 26rpx;
+  color: #627094;
+  margin-top: 60rpx;
+}
+.foot-link navigator,.foot-link text{
+  width: auto;
+  padding: 0 20rpx;
+}
+
+/* 领取弹屏 */
+.layer-receive{
+  
+}
+.layer-000 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width:100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+}
+.layer-content{
+   position: fixed;
+  width: 80%;
+  height: 900rpx;
+  background: #fff;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10rpx;
+
+}
+.btn-close{
+  width: 30rpx;
+  margin: 10rpx;
+}
+.user-box{
+width: 50%;
+margin: 50rpx auto;
+text-align: center;
+}
+.user-box .user-img{
+  width: 40rpx;
+  height: 40rpx;
+  overflow: hidden;
+  background: #ccc;
+  vertical-align: middle;
+  margin-right: 10rpx;
+
+}
+.font58{
+  font-size: 50rpx;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.agc{
+  text-align: center;
+}
+.layper-gift{
+  width: 370rpx;
+  margin-top: 50rpx;
+}
+.btn-lq{
+  width:400rpx;
+  margin-top: 50rpx;
+}
+.video-entry{
+  width: 100%;
+  height:200rpx;
+}
+.in-video-entry{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.video-entry image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
