@@ -11,7 +11,7 @@
               <text class='tit'>恭喜您注册成功</text>
               <text class='line'></text>
             </view>
-            <view class='gift-stadus'>开启宝盒即可领取</view>
+            <view class='gift-stadus'>请选择礼品领取门店</view>
             <!-- sinup -->
             <view class='register-info'>
               <view class='register-item flex a-c'>
