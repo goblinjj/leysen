@@ -18,9 +18,14 @@ margin: 0 auto 30rpx;
 }
 .img-send{
   display: block;
-  width: 230rpx;
-  height: 230rpx;
+  width: 450rpx;
+  height: 450rpx;
   margin: 30rpx auto 10rpx;
+}
+.img-send image{
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .btn-blue{
   display: block;

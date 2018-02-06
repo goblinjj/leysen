@@ -1,6 +1,6 @@
 .send-url{
   background: #fff;
-  padding: 0 15rpx;
+  padding: 30rpx 15rpx 0;
 }
 .send-detail{
   text-align: center;
@@ -9,7 +9,7 @@
   color: #666;
 }
 .send-detail .send-img{
-  height: 350rpx;
+  height: 450rpx;
   width: 100%;
 }
 .send-detail .send-img image{
@@ -25,11 +25,11 @@
 }
 .send-user{
   border-top: 1rpx solid #e5e5e5;
-  padding: 30rpx 15rpx;
+  padding: 50rpx 15rpx;
 }
 .send-user .left-img{
-  width: 90rpx;
-  height: 90rpx;
+  width: 120rpx;
+  height: 120rpx;
   flex-shrink: 0;
 }
 .send-user .left-img image{

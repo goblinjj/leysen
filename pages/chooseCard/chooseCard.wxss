@@ -112,8 +112,8 @@
 }
 
 .coupon-list .coupon-item .coupon-card image{
-  width: 170rpx;
-  height: 170rpx;
+  width:210rpx;
+  height: 210rpx;
   display: block;
   border: 2rpx solid transparent;
   border-radius: 10rpx;

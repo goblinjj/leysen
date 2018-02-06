@@ -43,9 +43,17 @@
       <view class='right-choose color_defalut' bindtap='phoneCall' id="4008289736">4008289736</view>
     </view>
     <view class='choose-item no-border flex'>
+      <view class='label'>产品详情:</view>
+      <view class='right-choose'>
+        <view class="in-right-choose">
+          <template is="wxParse" data="{{wxParseData:html_nodes.nodes}}" />
+        </view>
+        <!-- {{cardList[myindex].desc}} -->
+      </view>
+    </view>
+    <view class='choose-item no-border flex'>
     <view class='label'>使用须知:</view>
     <scroll-view class='right-choose notice_info_conten' scroll-y>
-      <text class='title1'>B、代金券：</text>
       <text class='textp'>1.领取&使用：</text>
       <text class='textp'>--代金券被接受后，将保存在接收人的小程序的“莱绅通灵王室臻选礼遇”购买历史内。</text>
       <text class='textp'>--2018年6月30日前，可在莱绅通灵指定门店使用 。若逾期未使用，则原路径自动退款至您的付款账户。</text>
@@ -59,15 +67,6 @@
       <text class='textp'>--如购买者在未消费的代金券到期之前注销了原来购卡的微信账户，导致未消费的代金券到期之后退款失败，将由购卡人自行承担。</text>
       <text class='textp'>--有任何疑问敬请垂询莱绅通灵全国客服电话：4008289736。</text>
     </scroll-view>
-    </view>
-    <view class='choose-item no-border flex'>
-      <view class='label'>产品详情:</view>
-      <view class='right-choose'>
-        <view class="in-right-choose">
-          <template is="wxParse" data="{{wxParseData:html_nodes.nodes}}" />
-        </view>
-        <!-- {{cardList[myindex].desc}} -->
-      </view>
     </view>
 </view>
 <!-- foot -->
