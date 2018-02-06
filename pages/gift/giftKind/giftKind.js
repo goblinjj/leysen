@@ -9,7 +9,9 @@ Page({
     showGift: false,
     cat_id: '',
     giftBox: {},
-    order_id:''
+    order_id:'',
+    status:0
+
   },
   //打开宝盒
   giftInfo: function () {
@@ -28,7 +30,8 @@ Page({
         giftBox: e.data,
         showGift: true,
         showMsg: e.msg,
-        order_id: e.data.order_id
+        order_id: e.data.order_id,
+        status: e.data.status 
       })
       // console.log(e.data)
       wx.hideLoading()
@@ -54,7 +57,10 @@ Page({
     }else{
       // 没有领到实物
       wx.navigateTo({
-        url: '/pages/gift/giftStatus/giftStatus?status=' + that.data.giftBox.code,
+        //原来的
+        // url: '/pages/gift/giftStatus/giftStatus?status=' + that.data.giftBox.code,
+        //2018-02-06 陈荣瑜修改 跳转到注册页面
+        url: '/pages/gift/register/register'
       })
     }
   },

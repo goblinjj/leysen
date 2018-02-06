@@ -135,17 +135,30 @@ Page({
         }
       }).then((e) => {
         console.log(e.data)
-        wx.showToast({
-          title: e.msg || '成功',
-          success: function (res) {
-            wx.navigateBack({
-              delta: 1,
+        // wx.showToast({
+        //   title: e.msg || '成功',
+        //   success: function (res) {
+        //     wx.navigateBack({
+        //       delta: 1,
+        //     })
+        //   }
+        // });
+        // setTimeout(function () {
+        //   wx.hideLoading()
+        // }, 2000)
+
+        //2018-02-06 修改注册成功提示并返回首页
+        wx.showModal({
+          title: "注册成功",
+          content: "注册完成，1000积分已打入您的账户",
+          showCancel: false,
+          success: function () {
+            wx.navigateTo({
+              url: '/pages/index/index'
             })
           }
-        });
-        setTimeout(function () {
-          wx.hideLoading()
-        }, 2000)
+        });  
+
       })
         .catch(e => {
           if (e.responseJSON.msg) {

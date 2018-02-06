@@ -23,6 +23,14 @@
 
         <image src='https://leysen.zoomdoit.com/static/admin/images/wangguan.png' class='bbox' wx:if="{{giftBox.gift_type == 2}}" mode='widthFix'></image>
          <image src='https://leysen.zoomdoit.com/static/admin/images/xiaoxiong.png' class='bear' wx:if="{{giftBox.gift_type == 1}}" mode='widthFix'></image>
+
+         <!-- 有库存没抽到并且没注册 -->
+         <block wx:elif="{{giftBox.code == 2 && status == 0}}">
+          <view class='gift-notice top_00'>
+            <view class='gift-stadus'>很抱歉，没有领到礼品，
+欢迎继续注册会员，领取1000积分</view>
+          </view>
+        </block>
         <!-- 有库存没抽到 -->
          <block wx:elif="{{giftBox.code == 3}}">
           <view class='gift-notice top_00'>
@@ -35,16 +43,23 @@
             <view class='gift-stadus'>{{showMsg}}</view>
           </view>
         </block>
+         
+        
         <!-- 已经领取 -->
         <block wx:else>
-          <!-- <view class='gift-notice top_00'>
-            <view class='gift-stadus'>您已领取过礼品</view>
-          </view> -->
+           <view class='gift-notice top_00'>
+            <view class='gift-stadus'>{{showMsg}}</view>
+          </view> 
         </block>
       </view>
-      <view class='tag-btn-content' hidden="{{giftBox.code == 2}}">
+      <view class='tag-btn-content' wx:if="{{giftBox.code == 2 && status == 0}}">
         <button class='get-tag' catchtap='openbox'>
-          <image mode="scaleToFill" src='/image/take.png'></image>
+          <image mode="scaleToFill" src='../../../image/regist.png'></image>
+        </button>        
+      </view>
+      <view class='tag-btn-content' wx:if="{{giftBox.code == 1}}">
+        <button class='get-tag' catchtap='openbox'>
+          <image mode="scaleToFill" src='../../../image/take.png'></image>
         </button>        
       </view>
     </view>
