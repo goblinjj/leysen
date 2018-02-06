@@ -201,10 +201,49 @@ Page({
 
           } else {
             // 未注册
-            console.log('未注册')
-            wx.navigateTo({
-              url: jumb
+            //这里调用 STOREGIFT 2018-02-07 
+            wx.showLoading({ title: "正在加载", mask: true });
+
+            HTTP.REQUEST({
+              ...SUBMIT,
+              payload: {
+                ...that.data.payload,
+                store_id: store_id
+              }
+            }).then((e) => {
+              console.log(e)
+              // 跳转到结果页
+              wx.hideLoading();
+              if(e.data.code == 1){
+                console.log('未注册')
+                wx.navigateTo({
+                  url: jumb
+                });
+              }else{
+                 wx.showModal({
+                   title: '领取失败',
+                   content: '添加领取店铺失败'
+                 })
+                return ;
+              }
+              
             })
+              .catch(e => {
+                wx.showToast({
+                  title: e.noticeMessage || '加载失败',
+                  image: "/image/warn.png"
+                });
+                setTimeout(function () {
+                  wx.hideLoading()
+                }, 2000)
+              });
+            //这里调用 STOREGIFT 结束 2018-02-07 
+          
+            // 此处处理 移到提交了商铺订单成功回调后执行跳转
+            // console.log('未注册')
+            // wx.navigateTo({
+            //   url: jumb
+            // })
           }
         })
         .catch(e => {
