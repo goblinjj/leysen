@@ -51,7 +51,7 @@
         </view>
         <view class='tag-btn-content'>
           <button class='get-tag' formType="submit">
-            <image mode="scaleToFill" src='/image/sure.png'></image>
+            <image mode="widthFix" src='/image/sure.png'></image>
           </button>
         </view>
       </form>

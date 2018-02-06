@@ -7,10 +7,10 @@
         <view class='gift-notice'>
           <view class='gift-name flex j-c a-c'>
             <text class='line'></text>
-            <text class='tit'>恭喜您获得王室礼</text>
+            <text class='tit'>您有一份王室新年礼待领取</text>
             <text class='line'></text>
           </view>
-          <view class='gift-stadus'>开启宝盒即可领取</view>
+          <view class='gift-stadus'>开启礼盒立刻领取</view>
         </view>
         <image src='https://leysen.zoomdoit.com/static/admin/images/giftBox1.png' mode='widthFix'></image>
       </view>

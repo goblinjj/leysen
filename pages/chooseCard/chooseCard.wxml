@@ -29,7 +29,7 @@
     </scroll-view>    
   </view>
   <view class='gift-tit font27 elis'>
-          <text >{{cardList[myindex].title}}</text>
+          <text >{{cardList[myindex].name}}</text>
         </view>
   <!-- 多张图    end-->
   <!-- 卡片选择   end -->
@@ -78,7 +78,7 @@
     <view class='choose-item flex'>
       <view class='label'>可用时段:</view>
       <view class='right-choose'>
-        全天
+        10:00 ~ 21:00  全天
       </view>
     </view>
     <view class='choose-item flex'>

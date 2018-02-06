@@ -130,7 +130,13 @@
 .tag-btn-content{
   margin-top: 100rpx;
 }
-.get-tag image{
-  width: 319rxp;
+.tag-btn-content button.get-tag{
+  padding: 0;
+  width: 319rpx;
   height: 101rpx;
+}
+.get-tag image{
+  width: 319rpx;
+  height: 101rpx;
+  display: block;
 }
