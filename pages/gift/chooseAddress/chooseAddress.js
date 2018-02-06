@@ -215,7 +215,7 @@ Page({
               console.log(e)
               // 跳转到结果页
               wx.hideLoading();
-              if(e.code == 0){
+              if(e.code == 1){
                 console.log('未注册')
                 wx.navigateTo({
                   url: jumb
