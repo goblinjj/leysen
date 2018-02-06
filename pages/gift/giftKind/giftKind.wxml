@@ -27,30 +27,34 @@
          <!-- 有库存没抽到并且没注册 -->
          <block wx:elif="{{giftBox.code == 2 && status == 0}}">
           <view class='gift-notice top_00'>
-            <view class='gift-stadus'>很抱歉，没有领到礼品，
-欢迎继续注册会员，领取1000积分</view>
-          </view>
-        </block>
-        <!-- 有库存没抽到 -->
-         <block wx:elif="{{giftBox.code == 3}}">
-          <view class='gift-notice top_00'>
             <view class='gift-stadus'>{{showMsg}}</view>
           </view>
         </block>
-        <!-- 无库存 -->
-        <block wx:elif="{{giftBox.code == 0}}">
-          <view class='gift-notice top_00'>
-            <view class='gift-stadus'>{{showMsg}}</view>
-          </view>
-        </block>
-         
-        
-        <!-- 已经领取 -->
-        <block wx:else>
+        <block wx:elif="{{giftBox.code == 2 && status == 1}}">
            <view class='gift-notice top_00'>
             <view class='gift-stadus'>{{showMsg}}</view>
           </view> 
-        </block>
+        </block> 
+        <!-- 有库存没抽到 -->
+         <!-- <block wx:elif="{{giftBox.code == 3}}">
+          <view class='gift-notice top_00'>
+            <view class='gift-stadus'>{{showMsg}} 1</view>
+          </view>
+        </block> -->
+        <!-- 无库存 -->
+        <!-- <block wx:elif="{{giftBox.code == 0}}">
+          <view class='gift-notice top_00'>
+            <view class='gift-stadus'>{{showMsg}} 2</view>
+          </view>
+        </block> -->
+         
+        
+        <!-- 已经领取 -->
+         <block wx:else>
+           <view class='gift-notice top_00'>
+            <view class='gift-stadus'>{{showMsg}} 3</view>
+          </view> 
+        </block> 
       </view>
       <view class='tag-btn-content' wx:if="{{giftBox.code == 2 && status == 0}}">
         <button class='get-tag' catchtap='openbox'>
