@@ -160,12 +160,13 @@ Page({
       })
         .then(data => {
           console.log(data)
+          let storeArry = that.data.storeArry
+          let store_id = storeArry[that.data.store].id
           if (data.data.status == 1) {
             // 注册成功
             console.log('注册成功')
             if (that.data.store) {
-              let storeArry = that.data.storeArry
-              let store_id = storeArry[that.data.store].id
+              
               wx.showLoading({ title: "正在加载", mask: true });
 
               HTTP.REQUEST({
@@ -214,7 +215,7 @@ Page({
               console.log(e)
               // 跳转到结果页
               wx.hideLoading();
-              if(e.data.code == 1){
+              if(e.code == 0){
                 console.log('未注册')
                 wx.navigateTo({
                   url: jumb
