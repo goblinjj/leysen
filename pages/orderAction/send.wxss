@@ -41,8 +41,9 @@ background-color: initial;
 }
 .btn-blue_send{
   margin-top: 60rpx;
-   width: 319rpx;
-  height: 101rpx;
+   width: 394rpx;
+  height: 92rpx;
+  padding:0;
   border: 0;
   background-color: #fff;
 

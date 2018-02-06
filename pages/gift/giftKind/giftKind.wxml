@@ -13,7 +13,7 @@
             <view class='gift-name flex j-c a-c'>
               <!-- <text class='line'></text> -->
               <text class='tit' wx:if="{{giftBox.gift_type == 1}}">恭喜您获得小熊吊牌礼</text>
-              <text class='tit' wx:if="{{giftBox.gift_type == 2}}">恭喜您获得王冠吊牌礼</text>
+              <text class='tit' wx:if="{{giftBox.gift_type == 2}}">恭喜您获得王室新年礼</text>
               <!-- <text class='line'></text> -->
             </view>
             <view class='gift-stadus'>同时赠送您1000会员积分</view>

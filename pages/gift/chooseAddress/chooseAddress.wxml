@@ -8,7 +8,7 @@
           <view class='register-box'>
             <view class='gift-name flex j-c a-c'>
               <text class='line'></text>
-              <text class='tit'>恭喜您注册成功</text>
+              <text class='tit'>恭喜您领取成功</text>
               <text class='line'></text>
             </view>
             <view class='gift-stadus'>请选择礼品领取门店</view>
