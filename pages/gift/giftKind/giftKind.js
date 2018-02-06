@@ -51,6 +51,7 @@ Page({
     var that = this
     if (that.data.giftBox.code==1){
       // 领到实物
+      console.info("========领到实物，订单ID：【" + that.data.giftBox.order_id+"】");
       wx.navigateTo({
         url: '/pages/gift/chooseAddress/chooseAddress?order_id=' + that.data.giftBox.order_id + '&code=' + that.data.giftBox.code,
       })

@@ -149,7 +149,7 @@ Page({
   chooseSubmit: function(){
     // 判断是否登陆
     var that = this
-    let jumb = '/pages/gift/register/register'
+    let jumb = '/pages/gift/register/register?order_id=' + that.data.payload.order_id;
     var openid = wx.getStorageSync('openid');
     if (openid) {
       HTTP.POST({
@@ -223,6 +223,7 @@ Page({
   },
   onLoad: function (options) {
     console.log(options)
+    console.info("========从上领取页面传递过来的参数：【" + options + "】");
     var that = this
     var order_id = ''
     if (options.order_id){

@@ -16,7 +16,9 @@ Page({
     wxTimerList: {},
     status: "",
     wx_user_info: {},
-    captcha: '' //图形验证码
+    captcha: '', //图形验证码,
+    order_id:''
+    
 
   },
 
@@ -143,9 +145,9 @@ Page({
         //     })
         //   }
         // });
-        // setTimeout(function () {
-        //   wx.hideLoading()
-        // }, 2000)
+        setTimeout(function () {
+          wx.hideLoading()
+        }, 2000)
 
         //2018-02-06 修改注册成功提示并返回首页
         wx.showModal({
@@ -180,7 +182,9 @@ Page({
 
   },
   onLoad: function (options) {
-
+      var order_id = options.order_id;
+      this.setData({order_id : order_id});
+      console.info("========从门店选择页面传递过来的参数：【" + options + "】");
   },
 
   /**

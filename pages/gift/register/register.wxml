@@ -3,6 +3,7 @@
   <view class='tag-box flex j-c a-c'>
     <view class='tag-inbox'>
       <form bindsubmit="formSubmit">
+      <input type='hidden' name="order_id" value="{{order_id}}"></input>
         <view class='ingift-register'>
           <view class='register-box'>
             <view class='gift-name flex j-c a-c'>
