@@ -176,7 +176,7 @@ stopRecode: function () {
    var that = this
    var nickName = wx.getStorageSync("nickName")
    return {
-     title: nickName + ' 送你您一份心意',
+     title: nickName + ' 送您一份心意',
      path: '/pages/index/index?order_number=' + that.data.order_number,
      imageUrl: that.data.pic,
      success: function (res) {
