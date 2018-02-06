@@ -204,7 +204,7 @@
   overflow: hidden;
 }
 .notice_info_conten{
-  height: 320rpx;
+  /* height: 320rpx; */
   font-size: 28rpx;
   line-height: 28rpx;
 }

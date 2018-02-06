@@ -110,7 +110,7 @@
 }
 .choose-ul{
   background: #fff;
-  padding: 30rpx 20rpx 40rpx;
+  padding: 30rpx 20rpx 20rpx;
   font-size: 26rpx;
 }
 .choose-item{
@@ -137,7 +137,7 @@
   width: 555rpx;
 }
 .notice_info_conten{
-  height: 180rpx;
+  /* height: 180rpx; */
   font-size: 26rpx;
   line-height: 28rpx;
 }
@@ -156,4 +156,7 @@
 }
 .choose-item .right-choose.color_defalut{
   color: #7375cb;
+}
+.out-scroll{
+  height: 100%;
 }

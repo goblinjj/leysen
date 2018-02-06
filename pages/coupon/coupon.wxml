@@ -2,9 +2,9 @@
 <import src="../../utils/wxParse.wxml" />
 <view class='coupon-content' wx:if="{{showCard}}">
   <view class='coupon-list'>
-  <!-- for -->
-    <view class='coupon-item' wx:for="{{cardList}}" wx:key="id" data-id="{{item.id}}" data-index="{{index}}" bindtap='choosedAction' >
-      <view class="coupon-card {{choosed == index? 'active' : ''}}"   >
+    <!-- for -->
+    <view class='coupon-item' wx:for="{{cardList}}" wx:key="id" data-id="{{item.id}}" data-index="{{index}}" bindtap='choosedAction'>
+      <view class="coupon-card {{choosed == index? 'active' : ''}}">
         <view class='coupon-image rel' bindtap='choosedActionShow' data-index="{{index}}">
           <image src='{{item.pic_url}}'></image>
           <view class="choose-num font32" wx-if="{{choosed == index}}">{{item.mynum}}</view>
@@ -24,59 +24,60 @@
     <!-- for   end -->
   </view>
   <view class='item-info_bg' bindtap='hidenDtl' wx:if="{{showItem}}"></view>
-<view class='choose-ul item-info' wx:if="{{showItem}}">
-  <image src='../../../image/btn-close.png' class="close-img" bindtap='hidenDtl'></image>
-    <view class='choose-item flex'>
-      <view class='label'>适用门店:</view>
-      <view class='right-choose color_defalut'>
-        <navigator url="/pages/store/storeList?store={{curitem.id}}" hover-class="none">查看全部可用门店</navigator>
-      </view>
-    </view>
-    <view class='choose-item flex'>
-      <view class='label'>可用时段:</view>
-      <view class='right-choose'>
-        10:00~21:00  全天
-      </view>
-    </view>
-    <view class='choose-item flex'>
-      <view class='label'>客服电话:</view>
-      <view class='right-choose color_defalut' bindtap='phoneCall' id="4008289736">4008289736</view>
-    </view>
-    <view class='choose-item no-border flex'>
-      <view class='label'>产品详情:</view>
-      <view class='right-choose'>
-        <view class="in-right-choose">
-          <template is="wxParse" data="{{wxParseData:html_nodes.nodes}}" />
+  <view class='choose-ul item-info' wx:if="{{showItem}}">
+    <image src='../../../image/btn-close.png' class="close-img" bindtap='hidenDtl'></image>
+    <scroll-view class='right-choose out-scroll' scroll-y>
+      <view class='choose-item flex'>
+        <view class='label'>适用门店:</view>
+        <view class='right-choose color_defalut'>
+          <navigator url="/pages/store/storeList?store={{curitem.id}}" hover-class="none">查看全部可用门店</navigator>
         </view>
-        <!-- {{cardList[myindex].desc}} -->
       </view>
-    </view>
-    <view class='choose-item no-border flex'>
-    <view class='label'>使用须知:</view>
-    <scroll-view class='right-choose notice_info_conten' scroll-y>
-      <text class='textp'>1.领取&使用：</text>
-      <text class='textp'>--代金券被接受后，将保存在接收人的小程序的“莱绅通灵王室臻选礼遇”购买历史内。</text>
-      <text class='textp'>--2018年6月30日前，可在莱绅通灵指定门店使用 。若逾期未使用，则原路径自动退款至您的付款账户。</text>
-      <text class='textp'>--代金券未赠送前，被保存在“莱绅通灵王室臻选礼遇”小程序的购买历史内。</text>
-      <text class='textp'>2.退卡：代金券在送出后24小时内未被您的微信好友接受，则此代金券将由系统自动退回到您的微信卡包内。一经接受无法退卡，且经接受的代金券不可二次转赠。</text>
-      <text class='textp'>3.退货：满足莱绅通灵店铺退货条件的可以退货。</text>
-      <text class='textp'>4.发票及质保书：您的微信好友在莱绅通灵门店购买相应商品后，可留下收货地址，门店将在7个工作日内将质保书及发票邮寄给您的微信好友。对于发票有任何疑问可联系我司客服。</text>
-      <text class='textp'>5.特殊说明：</text>
-      <text class='textp'>--此代金券为不记名卡，不记名、不挂失、不可多次使用、不可跨品牌使用。 </text>
-      <text class='textp'>--请在消费商品前向店员明示“订单二维码”，代金券核销后即刻失效。</text>
-      <!-- <text class='textp'>--如购买者在未消费的代金券到期之前注销了原来购卡的微信账户，导致未消费的代金券到期之后退款失败，将由购卡人自行承担。</text>
+      <view class='choose-item flex'>
+        <view class='label'>可用时段:</view>
+        <view class='right-choose'>
+          10:00~21:00 全天
+        </view>
+      </view>
+      <view class='choose-item flex'>
+        <view class='label'>客服电话:</view>
+        <view class='right-choose color_defalut' bindtap='phoneCall' id="4008289736">4008289736</view>
+      </view>
+      <view class='choose-item no-border flex'>
+        <view class='label'>产品详情:</view>
+        <view class='right-choose'>
+          <view class="in-right-choose">
+            <template is="wxParse" data="{{wxParseData:html_nodes.nodes}}" />
+          </view>
+          <!-- {{cardList[myindex].desc}} -->
+        </view>
+      </view>
+      <view class='choose-item no-border flex'>
+        <view class='label'>使用须知:</view>
+        <view class='right-choose notice_info_conten'>
+          <text class='textp'>1.领取&使用：</text>
+          <text class='textp'>--代金券被接受后，将保存在接收人的小程序的“莱绅通灵王室臻选礼遇”购买历史内。</text>
+          <text class='textp'>--2018年6月30日前，可在莱绅通灵指定门店使用 。若逾期未使用，则原路径自动退款至您的付款账户。</text>
+          <text class='textp'>--代金券未赠送前，被保存在“莱绅通灵王室臻选礼遇”小程序的购买历史内。</text>
+          <text class='textp'>2.退卡：代金券在送出后24小时内未被您的微信好友接受，则此代金券将由系统自动退回到您的微信卡包内。一经接受无法退卡，且经接受的代金券不可二次转赠。</text>
+          <text class='textp'>3.退货：满足莱绅通灵店铺退货条件的可以退货。</text>
+          <text class='textp'>4.特殊说明：</text>
+          <text class='textp'>--此代金券为不记名卡，不记名、不挂失、不可多次使用、不可跨品牌使用。 </text>
+          <text class='textp'>--请在消费商品前向店员明示“订单二维码”，代金券核销后即刻失效。</text>
+          <!-- <text class='textp'>--如购买者在未消费的代金券到期之前注销了原来购卡的微信账户，导致未消费的代金券到期之后退款失败，将由购卡人自行承担。</text>
       <text class='textp'>--有任何疑问敬请垂询莱绅通灵全国客服电话：4008289736。</text> -->
+        </view>
+      </view>
     </scroll-view>
+  </view>
+  <!-- foot -->
+  <view class='buy-foot flex j-s a-c'>
+    <view class='left-buy-foot'>
+      <view class='num font24'>共 {{cardList[choosed].mynum || 0}} 份</view>
+      <view class='price'>¥{{cardList[choosed].mynum * cardList[choosed].price || 0}}</view>
     </view>
-</view>
-<!-- foot -->
-<view class='buy-foot flex j-s a-c'>
-  <view class='left-buy-foot'>
-    <view class='num font24'>共 {{cardList[choosed].mynum || 0}} 份</view>
-    <view class='price'>¥{{cardList[choosed].mynum * cardList[choosed].price || 0}}</view>
+    <view class='right-buy-foot'>
+      <button catchtap='setOrder'>购买</button>
+    </view>
   </view>
-  <view class='right-buy-foot'>
-    <button catchtap='setOrder'>购买</button>
-  </view>
-</view>
 </view>
