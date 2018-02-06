@@ -2,7 +2,7 @@
 <view class="index container" wx:if="{{showIndex}}">
   <!-- banner图   end -->
   <swiper class="banner-index" circular="true" indicator-color="rgba(255,255,255,.3)" indicator-active-color="#FFF" indicator-dots autoplay circular interval="{{5000}}" duration="{{300}}">
-   
+
     <swiper-item>
       <image src='https://leysenstatic.zoomdoit.com/homebanner1.png'></image>
     </swiper-item>
@@ -13,7 +13,7 @@
   <!-- banner图   end -->
   <!-- fast entry -->
   <view class="fast-entry">
-    <view class='tit'>爱不宜迟  有礼不缺席</view>
+    <view class='tit'>爱不宜迟 有礼不缺席</view>
     <view class='tit2'>— 致爱礼品卡 —</view>
     <view class="fast-list flex">
       <block wx:for="{{fastList}}" wx:key="id">
@@ -29,11 +29,13 @@
   <!-- fast entry    end-->
   <!-- 视频区域 -->
   <view class="video-content">
-    <view class='tit'>年度回馈  王室红毯之旅</view>
-    <view class="video-list j-s flex">
+    <view class='tit'>年度回馈 王室红毯之旅</view>
+    <view class="video-list j-s flex a-c">
       <view class="video-item">
-        <video id="myVideo" poster='https://leysenstatic.zoomdoit.com/kaiqihongtan.png' src="https://leysenstatic.zoomdoit.com/gongbu.mp4">
-        </video>
+        <view class='out-video'>
+          <video id="myVideo" poster='https://leysenstatic.zoomdoit.com/kaiqihongtan.png' src="https://leysenstatic.zoomdoit.com/gongbu.mp4">
+          </video>
+        </view>
         <text>开启【红毯之旅】</text>
       </view>
       <view class="video-item">
@@ -41,15 +43,15 @@
           <navigator class='in-video-entry' url='/pages/video/video'>
             <image mode='scaleToFill' src='https://leysenstatic.zoomdoit.com/huojiang.png'></image>
           </navigator>
-          <text>揭晓【获奖名单】</text>
         </view>
+        <text>揭晓【获奖名单】</text>
       </view>
     </view>
   </view>
   <!-- 视频区域   end -->
   <!-- foot -->
   <view class='foot-link flex j-c'>
-   <!-- <text catchtap='testtap'>购买历史</text>|  -->
+    <!-- <text catchtap='testtap'>购买历史</text>|  -->
     <text catchtap='toOrderList'>购买历史</text>|
     <navigator url="/pages/company/company" hover-class="none">Leysen1855简介</navigator>
   </view>
@@ -70,9 +72,9 @@
       <image src='{{giftInfo.pic_url}}' mode="widthFix" class='layper-gift'></image>
       <view class="" catchtap='reciveGife'>
         <image src='../../image/btn-lq.png' mode="widthFix" class='btn-lq'>
-      </image>
+        </image>
       </view>
-      
+
     </view>
 
 

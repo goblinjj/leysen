@@ -174,8 +174,9 @@ stopRecode: function () {
  // 邀请
  onShareAppMessage: function () {
    var that = this
+   var nickName = wx.getStorageSync("nickName")
    return {
-     title: that.data.name,
+     title: nickName + ' 送你您一份心意',
      path: '/pages/index/index?order_number=' + that.data.order_number,
      imageUrl: that.data.pic,
      success: function (res) {
