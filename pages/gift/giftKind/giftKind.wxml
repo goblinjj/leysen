@@ -50,11 +50,11 @@
          
         
         <!-- 已经领取 -->
-         <block wx:else>
+         <!-- <block wx:else>
            <view class='gift-notice top_00'>
             <view class='gift-stadus'>{{showMsg}} 3</view>
           </view> 
-        </block> 
+        </block>  -->
       </view>
       <view class='tag-btn-content' wx:if="{{giftBox.code == 2 && status == 0}}">
         <button class='get-tag' catchtap='openbox'>
