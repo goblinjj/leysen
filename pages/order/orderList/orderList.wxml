@@ -12,7 +12,7 @@
       <view class='order-item' wx:for="{{orderList}}" wx:key="id">
         <view class='order-detail flex'>
           <view class='left-info'>
-            <image mode='aspectFit' src='{{item.category_pic}}'></image>
+            <image mode='aspectFit' src='{{item.gift_url}}'></image>
           </view>
           <view class='right-info'>
             <view class='tit flex j-s'>
