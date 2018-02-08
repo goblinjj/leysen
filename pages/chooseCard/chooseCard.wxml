@@ -97,13 +97,11 @@
     <view class='choose-item no-border flex'>
       <view class='label'>使用须知:</view>
       <scroll-view class='right-choose notice_info_conten' scroll-y>
-        <text class='textp'>1.领取&使用：</text>
+        <text class='textp'>领取&使用：</text>
         <text class='textp'>--礼品卡被接受后，将保存在接收人的“莱绅通灵王室臻选礼遇”小程序的购买历史内.</text>
         <text class='textp'>--2018年3月31日前，可在莱绅通灵指定门店领取所购买的商品。若逾期未领取，则原路径自动退款至您的付款账户。</text>
         <text class='textp'>--礼品卡未赠送前，被保存在“莱绅通灵王室臻选礼遇”小程序的购买历史内。</text>
-        <text class='textp'>2.退卡：礼品卡在送出后24小时内未被您的微信好友接受，则此礼品卡将由系统自动退回到您的“莱绅通灵王室臻选礼遇”小程序的购买历史内。一经接受无法退卡，且经接受的礼品卡不可二次转赠。</text>
-        <text class='textp'>3.退货：满足莱绅通灵店铺退货条件的可以退货。</text>
-        <text class='textp'>4.特殊说明：</text>
+        <text class='textp'>特殊说明：</text>
         <text class='textp'>--此礼品卡为不记名卡，不记名、不挂失、不可多次使用、不可兑换现金、不可跨品牌使用。</text>
         <text class='textp'>--本礼品卡仅限使用一次，仅用于兑换指定商品。</text>
         <text class='textp'>--请在领取商品前向店员明示“订单二维码”，兑卡产品核销后即刻失效。</text>

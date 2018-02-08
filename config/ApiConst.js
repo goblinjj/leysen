@@ -1,4 +1,4 @@
-const API_URL = `https://leysen.zoomdoit.com`;
+const API_URL = `https://leysen.zoomdoit.com/dev`;
 // const API_URL = `https://watch.ctfmall.com/index.php/m`; //正式环境
 
 

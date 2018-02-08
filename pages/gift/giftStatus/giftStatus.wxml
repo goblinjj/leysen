@@ -7,14 +7,14 @@
           <!-- <image mode='widthFix' src='/image/logo.png'></image> -->
           <!-- 无库存 0 -->
           <view class='gift-stadus' wx:if="{{status == 0}}" >很抱歉，实物礼品已领完，
-欢迎继续注册会员，领取1000积分</view>
+欢迎继续注册会员</view>
           <!-- 有库存并且领到 1 -->
           <view class='gift-stadus' wx:if="{{status == 1}}">恭喜您领取成功，欢迎前往门店领取，
 领取信息可在购买记录查询</view>
  <view class='gift-stadus' wx:if="{{status == 2}}">很抱歉，您已经领取礼品</view>
           <!-- 有库存没领到 3-->
            <view class='gift-stadus' wx:if="{{status == 3}}">很抱歉，没有领到礼品，
-欢迎继续注册会员，领取1000积分</view> 
+欢迎继续注册会员</view> 
          
           <view class="empty"></view>
         </view> 

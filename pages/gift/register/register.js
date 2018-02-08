@@ -152,7 +152,7 @@ Page({
         //2018-02-06 修改注册成功提示并返回首页
         wx.showModal({
           title: "注册成功",
-          content: "注册完成，1000积分已打入您的账户",
+          content: "注册完成",
           showCancel: false,
           success: function () {
             wx.navigateTo({
