@@ -1,5 +1,5 @@
-const API_URL = `https://leysen.zoomdoit.com/dev`;
-// const API_URL = `https://watch.ctfmall.com/index.php/m`; //正式环境
+const API_URL = `https://leysen.zoomdoit.com`; // 正式环境
+// const API_URL = `https://leysen.zoomdoit.com/dev`; // 测试环境
 
 
 const API_CONST = {
