@@ -4,7 +4,7 @@
   <swiper class="banner-index" circular="true" indicator-color="rgba(255,255,255,.3)" indicator-active-color="#FFF" indicator-dots autoplay circular interval="{{5000}}" duration="{{300}}">
 
     <swiper-item>
-      <image src='https://leysenstatic.zoomdoit.com/homebanner1.png'></image>
+      <image src='https://leysenstatic.zoomdoit.com/homebanner5.png'></image>
     </swiper-item>
     <swiper-item>
       <image src='https://leysenstatic.zoomdoit.com/homebanner2.png'></image>
